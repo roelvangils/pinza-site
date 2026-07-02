@@ -427,6 +427,12 @@ figure img {
   border-radius: 12px;
   border: 1px solid var(--hairline);
 }
+/* Captures that carry their own rounded corners + alpha shadow
+   (floating HUD cards) — no extra frame on top. */
+figure.floating img {
+  border: none;
+  border-radius: 0;
+}
 figcaption {
   font-size: 0.88rem;
   color: var(--ink-soft);

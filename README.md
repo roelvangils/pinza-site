@@ -21,7 +21,7 @@ Then: repo Settings → Pages → custom domain `pinza.app` → Enforce HTTPS (c
 Save as `img/screenshots/<name>@2x.png` (Retina capture, light mode, neutral wallpaper, ≤ 350 KB after `oxipng`/ImageOptim), then add `<figure>`s to `index.html`:
 
 1. `popover@2x.png` — recents popover, 6–8 staged pins incl. one pinned + one locked (hero shot)
-2. `copy-hud@2x.png` — the post-copy HUD over Safari
+2. ~~copy-hud~~ — done: `copy-hud-light@2x.png` + `copy-hud-dark@2x.png` (scheme-swapped via `<picture>` in the how-it-works section)
 3. `launcher@2x.png` — the launcher window
 4. `settings@2x.png` — Settings → Shortcuts or Recents
 5. `bin-touchid@2x.png` — the Touch ID prompt on the Bin
