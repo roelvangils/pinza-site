@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Pinza</title>
+  <meta name="description" content="Pinza's privacy policy: local-first, no account, no analytics. Every network connection the app can make, listed, with its off switch.">
+  <link rel="canonical" href="https://pinza.app/privacy/">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="28" height="28">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/privacy/" aria-current="page">Privacy</a></li>
+        <li><a href="/terms/">Terms</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap prose">
+    <h1>Privacy policy</h1>
+    <p class="updated">Effective 2 July 2026 · Eleven Ways, Ghent, Belgium</p>
+
+    <h2>The short version</h2>
+    <p>Pinza is local-first. There is no account, no analytics, no telemetry, and no advertising. What you copy stays on your Mac. The few network connections the app can make are listed below — all of them, with what each one sends and how to turn it off.</p>
+
+    <h2>Your copy history</h2>
+    <p>Everything Pinza saves — URLs, file paths, titles — is stored only on your Mac, in an AES-256-encrypted SQLite database under <code>~/Library/Application Support/Pinza/</code>. The encryption key is generated on first launch and stored in your macOS Keychain, marked device-only: it never syncs and is never included in backups. The Recently Deleted Bin can additionally require Touch ID.</p>
+
+    <h2>What Pinza reads on your Mac</h2>
+    <ul>
+      <li>Pinza reads the frontmost app's state (the tab URL, the selected file, the open note) <strong>only at the moment you press a shortcut</strong> — never in the background.</li>
+      <li>If you schedule a pin as a reminder, Pinza writes to Reminders via Apple's EventKit. It never reads your existing reminders.</li>
+      <li>The MCP server, when enabled, communicates over a local Unix socket with file-permission checks. It has no network component; nothing leaves your Mac.</li>
+    </ul>
+
+    <h2>Every network connection Pinza can make</h2>
+    <p>This table is exhaustive. "You control it" names the switch in Settings.</p>
+    <div class="net-scroll">
+      <table class="net">
+        <thead>
+          <tr>
+            <th scope="col">Connection</th>
+            <th scope="col">What is sent</th>
+            <th scope="col">When</th>
+            <th scope="col">You control it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Update check (GitHub Pages)</th>
+            <td>A standard web request for the update feed; GitHub sees your IP address.</td>
+            <td>Daily, and when you choose Check for Updates</td>
+            <td>Settings → About → updates toggle</td>
+          </tr>
+          <tr>
+            <th scope="row">Website favicons</th>
+            <td>A request to each site already in your history, for its icon. Fetched directly from the site — never via a third-party service. Cached locally.</td>
+            <td>When a URL appears in your recents</td>
+            <td>Settings → Recents → Fetch website favicons</td>
+          </tr>
+          <tr>
+            <th scope="row">Rich preview images</th>
+            <td>A request for artwork (album covers) to the source service's image server.</td>
+            <td>When you hover an entry with artwork</td>
+            <td>Settings → Recents → Fetch rich preview images</td>
+          </tr>
+          <tr>
+            <th scope="row">Music links (song.link)</th>
+            <td>The public URL of the track you copied, sent to the Odesli (song.link) API to offer open-in-other-service links. No personal identifier.</td>
+            <td>When you copy or hover a music entry</td>
+            <td>No dedicated switch yet — avoided entirely by not using the music integrations</td>
+          </tr>
+          <tr>
+            <th scope="row">Podcast &amp; book metadata (Apple)</th>
+            <td>The public show, episode, or book identifier, sent to Apple's iTunes lookup API for titles and artwork.</td>
+            <td>When you copy a Podcasts or Books item</td>
+            <td>Podcasts: the rich-previews toggle. Books: no dedicated switch</td>
+          </tr>
+          <tr>
+            <th scope="row">YouTube channel avatars</th>
+            <td>The public channel ID, to fetch the channel's avatar from YouTube.</td>
+            <td>When a YouTube entry appears in recents</td>
+            <td>Settings → Integrations → YouTube avatars</td>
+          </tr>
+          <tr>
+            <th scope="row">Link liveness check</th>
+            <td>A minimal HEAD request to URLs in your history, to dim dead links.</td>
+            <td>On hover — only if you enabled it</td>
+            <td>Settings → Recents. <strong>Off by default</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Google Drive (optional sign-in)</th>
+            <td>OAuth tokens and file identifiers to Google's APIs, read-only, to copy Drive document contents. Google's privacy policy applies.</td>
+            <td>Only after you sign in, on copy of a Drive document</td>
+            <td>Settings → Integrations → sign out</td>
+          </tr>
+          <tr>
+            <th scope="row">Notion (optional sign-in)</th>
+            <td>OAuth tokens and page identifiers to Notion's API, to export a page as Markdown. Notion's privacy policy applies.</td>
+            <td>Only after you sign in, on copy of a Notion page</td>
+            <td>Settings → Integrations → sign out</td>
+          </tr>
+          <tr>
+            <th scope="row">PDF download</th>
+            <td>A request for the PDF you're copying, saved to your Downloads folder. Sent without your browser cookies.</td>
+            <td>Only when you explicitly copy a PDF link</td>
+            <td>Only fires on that explicit action</td>
+          </tr>
+          <tr>
+            <th scope="row">License activation (Gumroad)</th>
+            <td>Your license key, sent to Gumroad's license API for verification. Gumroad is the merchant of record for purchases — your name, email, and payment details are handled by <a href="https://gumroad.com/privacy">Gumroad under their privacy policy</a>.</td>
+            <td>When you activate, deactivate, or — at most weekly — silently re-verify a license</td>
+            <td>Only applies to Pro purchases</td>
+          </tr>
+          <tr>
+            <th scope="row">Crash reports (Sentry)</th>
+            <td>Crash stack traces and basic device info. Never clipboard contents, URLs, or paths; user identifiers are stripped before sending.</td>
+            <td>Only if you opted in. <strong>Off by default</strong></td>
+            <td>Settings → About → Diagnostics</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>One nuance for completeness: when Pinza downloads a PDF that needs your browser session, it asks the browser itself to fetch the file — that traffic comes from your browser, with its cookies, not from Pinza.</p>
+
+    <h2>What Pinza never does</h2>
+    <ul>
+      <li>No analytics or tracking of any kind, first- or third-party.</li>
+      <li>No account, no sign-up, no mailing list attached to the app.</li>
+      <li>Your clipboard history is never transmitted anywhere.</li>
+      <li>No data is sold or shared. There's nothing to sell.</li>
+    </ul>
+
+    <h2>Deleting your data</h2>
+    <p>Delete the app and the folder <code>~/Library/Application Support/Pinza/</code>. That's everything. The Keychain entries (database key, license) can be removed with Keychain Access.</p>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the effective date above changes with it and the history is visible in the <a href="https://github.com/roelvangils/pinza-site">site's public repository</a>. Questions: <a href="mailto:hello@pinza.app">hello@pinza.app</a>.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>
