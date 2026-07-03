@@ -112,14 +112,20 @@ header.site .brand {
 }
 header.site nav {
   margin-left: auto;
+  /* Flex items default to min-width:auto (= the row's max-content
+     here), which stops the ul from ever wrapping and forces the whole
+     page wider than small viewports — the header was the one element
+     dragging the body past 100vw on phones. */
+  min-width: 0;
 }
 header.site nav ul {
   display: flex;
-  gap: 1.1rem;
+  gap: 0.6rem 1.1rem;
   list-style: none;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 header.site nav a {
   color: var(--ink-soft);
