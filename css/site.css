@@ -938,13 +938,53 @@ img.sq { border-radius: 22.5%; }
   padding: 0.1em 0.55em;
 }
 
-/* ── Music services row ────────────────────────────────────── */
-.services { margin-top: 2.6rem; }
-.services .payoff {
-  font-size: 0.92rem;
-  color: var(--ink-soft);
-  max-width: 40rem;
+/* ── Power-ups ─────────────────────────────────────────────── */
+.powerups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(26rem, 100%), 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
+.powerup {
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.pu-body {
+  padding: 1.4rem 1.5rem 1.3rem;
+  flex: 1;
+}
+.pu-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+.pu-head img { display: block; }
+.pu-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.powerup p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.pu-shot img {
+  display: block;
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+}
+.pu-services {
+  padding: 0 1.5rem 1.4rem;
+}
+
+/* ── Music services row ────────────────────────────────────── */
 .service-row {
   list-style: none;
   margin: 0.9rem 0 0;
