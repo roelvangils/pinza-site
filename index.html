@@ -515,13 +515,6 @@
           <p class="bubble user" aria-hidden="true">Which links did I copy from Safari this morning?</p>
           <p class="bubble agent" aria-hidden="true">Three pins: the NSPanel docs, a WWDC session, and a Swift forums thread. Want them as Markdown links?</p>
           <p class="bubble user" aria-hidden="true">Yes — and pop the WWDC one up as a Card.</p>
-          <ul class="mcp-tools" aria-label="MCP tools">
-            <li><code>search_pins</code></li>
-            <li><code>list_pins</code></li>
-            <li><code>get_pin</code></li>
-            <li><code>reveal_pin</code></li>
-            <li><code>copy_pin</code></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -591,6 +584,17 @@
       <details>
         <summary>What's the MCP server?</summary>
         <p>MCP is the open protocol AI apps use to talk to local tools. Pinza Pro's MCP server lets your AI agent — Claude, Codex, Gemini, or any MCP client — search and read your pins locally, over a Unix socket, with nothing leaving your Mac. You paste one snippet into the agent's config and it works.</p>
+      </details>
+      <details>
+        <summary>Which MCP commands are there?</summary>
+        <p>Five, each with its own toggle in Settings:</p>
+        <ul>
+          <li><code>search_pins</code> — full-text search across your pins</li>
+          <li><code>list_pins</code> — list pins, filtered by app, site, or date</li>
+          <li><code>get_pin</code> — one pin's details, including its highlights</li>
+          <li><code>reveal_pin</code> — pop a pin up on screen as a floating Card</li>
+          <li><code>copy_pin</code> — put a pin back on your clipboard. The only tool that can write, so it ships turned off.</li>
+        </ul>
       </details>
       <details>
         <summary>Apple Silicon or Intel?</summary>
