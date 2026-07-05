@@ -3,7 +3,28 @@
    icon: paperclip steel on paper white, one azure for links.
    Both color schemes; motion respects prefers-reduced-motion. */
 
+/* Instrument Sans, self-hosted (no Google CDN request — the privacy
+   page promises every network connection is listed, so the site makes
+   none of its own). Variable weight 400–700, upright only. */
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/instrument-sans-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/instrument-sans-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
+  --sans: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   --paper: #f7f7f5;
   --ink: #1b1c1e;
   --ink-soft: #55585e;
@@ -48,7 +69,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-family: var(--sans);
   line-height: 1.6;
   font-size: 1.0625rem;
   -webkit-text-size-adjust: 100%;
@@ -78,9 +99,9 @@ body {
 
 /* ── Layout ────────────────────────────────────────────────── */
 .wrap {
-  max-width: 44rem;
+  max-width: 49rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 clamp(1.1rem, 4vw, 2rem);
 }
 
 header.site {
@@ -187,17 +208,18 @@ footer.site .footer-mark {
 
 /* ── Type ──────────────────────────────────────────────────── */
 h1, h2, h3 {
-  font-family: ui-serif, "New York", Georgia, serif;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  font-weight: 600;
+  font-family: var(--sans);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 640;
 }
 h1 {
   font-size: clamp(2.1rem, 6vw, 3.1rem);
+  letter-spacing: -0.025em;
   margin: 0 0 0.6rem;
 }
 h2 {
-  font-size: 1.65rem;
+  font-size: clamp(1.55rem, 1.15rem + 1.8vw, 1.9rem);
   margin: 0 0 0.8rem;
 }
 h3 {
@@ -214,16 +236,6 @@ code {
   background: var(--steel-soft);
   padding: 0.1em 0.35em;
   border-radius: 4px;
-}
-
-.eyebrow {
-  font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--steel);
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 section {
@@ -252,17 +264,6 @@ kbd.cap {
 @media (prefers-color-scheme: dark) {
   kbd.cap { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08); }
 }
-.hero kbd.cap {
-  font-size: 1.8rem;
-  border-radius: 10px;
-  padding: 0.2em 0.5em;
-}
-.hero .chord {
-  display: inline-flex;
-  gap: 0.35rem;
-  margin: 1.4rem 0 0.4rem;
-}
-
 /* ── Hero ──────────────────────────────────────────────────── */
 .hero {
   padding-top: 5.5rem;
@@ -275,9 +276,6 @@ kbd.cap {
   max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
-}
-.hero .chord {
-  margin: 2.2rem 0 0;
 }
 .hero .hero-shot {
   margin: 2.8rem 0 2.4rem;
@@ -300,12 +298,10 @@ kbd.cap {
 }
 .ledger caption {
   text-align: left;
-  font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--steel);
-  padding-bottom: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  padding-bottom: 0.8rem;
 }
 .ledger th[scope="row"] {
   text-align: left;
@@ -401,13 +397,12 @@ kbd.cap {
 /* ── App list ──────────────────────────────────────────────── */
 .applist {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
   gap: 1.2rem 2rem;
   margin-top: 1.4rem;
 }
 .applist h3 {
   margin: 0 0 0.3rem;
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -448,9 +443,9 @@ kbd.cap {
 .compare .yes { color: var(--good); font-weight: 600; }
 .compare .cap-note { color: var(--ink-soft); }
 .price {
-  font-family: ui-serif, "New York", Georgia, serif;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 640;
+  letter-spacing: -0.01em;
 }
 
 /* ── FAQ ───────────────────────────────────────────────────── */
@@ -522,12 +517,27 @@ table.net thead th { font-size: 0.85rem; }
 /* ── Motion ────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
   a, .btn, .faq summary { transition: color 120ms ease, filter 120ms ease; }
+  :is(.bento, .ai-row) li::before, :is(.bento, .ai-row) li::after {
+    transition: opacity 130ms ease 80ms, transform 130ms ease 80ms;
+  }
 }
 
 /* 200% zoom / narrow screens */
 @media (max-width: 30rem) {
   header.site nav { margin-left: 0; }
   .hero { padding-top: 2.5rem; }
+  /* The clipboard ledger: app name above its output, no table columns. */
+  .ledger th[scope="row"] {
+    display: block;
+    padding: 0.55rem 0 0;
+    width: auto;
+  }
+  .ledger td {
+    display: block;
+    padding: 0.1rem 0 0.6rem;
+  }
+  .ledger tr { display: block; }
+  .ledger tbody { display: block; }
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -547,14 +557,14 @@ table.net thead th { font-size: 0.85rem; }
   }
 }
 
-.wrap.wide { max-width: 68rem; }
-header.site .wrap { max-width: 68rem; }
+.wrap.wide { max-width: 76rem; }
+header.site .wrap { max-width: 76rem; }
 
 main > section {
   margin-top: 0;
-  padding: 4.5rem 0;
+  padding: clamp(3rem, 4vw + 1.5rem, 4.5rem) 0;
 }
-main > section.hero { padding: 5.5rem 0 3.5rem; }
+main > section.hero { padding: clamp(3rem, 5vw + 1.5rem, 5.5rem) 0 3.5rem; }
 .band {
   background: var(--wash);
   border-top: 1px solid var(--hairline);
@@ -584,7 +594,8 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
 /* ── App wall ──────────────────────────────────────────────── */
 .appwall {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  /* min 21rem → three cards per row at the full 76rem width */
+  grid-template-columns: repeat(auto-fit, minmax(min(21rem, 100%), 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -597,7 +608,6 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
 }
 .appgroup h3 {
   margin: 0 0 0.15rem;
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 0.82rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -610,56 +620,144 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
   color: var(--ink-soft);
   margin: 0 0 0.9rem;
 }
-.chips {
+/* Icon bento: featured apps 2×2, the rest 1×1, name in a hover tip. */
+.bento {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-.chips li {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: dense;
+  gap: 0.5rem;
   align-items: center;
-  gap: 0.42rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.28rem 0.75rem 0.28rem 0.4rem;
-  border: 1px solid var(--hairline);
-  border-radius: 999px;
-  background: var(--paper);
 }
-.chips img {
-  width: 28px;
-  height: 28px;
+.bento li {
+  position: relative;
+}
+.bento li.lg {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.bento img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Icons whose source artwork has a square canvas (App Store / web
+   assets) get the macOS-style corner rounding. */
+img.sq { border-radius: 22.5%; }
+:is(.bento, .ai-row) li::after {
+  content: attr(data-app);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.45rem);
+  transform: translate(-50%, 0.25rem);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.45em 0.7em;
   border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 6;
+}
+:is(.bento, .ai-row) li::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.15rem);
+  transform: translate(-50%, 0.25rem) rotate(45deg);
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 6;
+}
+:is(.bento, .ai-row) li:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+:is(.bento, .ai-row) li:hover::before {
+  opacity: 1;
+  transform: translate(-50%, 0) rotate(45deg);
 }
 .mono-chip {
-  width: 28px;
-  height: 28px;
   display: grid;
   place-items: center;
-  border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 22%;
   background: var(--steel-soft);
   color: var(--ink-soft);
   font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 /* ── Nugget cards ──────────────────────────────────────────── */
 .nuggets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1rem;
+  margin-top: 1rem;
+}
+.nuggets-lg {
+  /* min 26rem → two cards per row at the full 76rem width */
+  grid-template-columns: repeat(auto-fit, minmax(min(26rem, 100%), 1fr));
+}
+.nuggets-sm {
+  /* min 20rem → three cards per row at the full 76rem width */
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   margin-top: 1rem;
 }
 .nug {
   background: var(--card);
   border: 1px solid var(--hairline);
   border-radius: 14px;
-  padding: 1.2rem 1.3rem 1.1rem;
+  padding: 0;
+  overflow: hidden;
   box-shadow: var(--shadow-soft);
+}
+.nug-body {
+  padding: 1.1rem 1.2rem 1.1rem;
+}
+/* The image bleeds to the card's edges: full-height left pane on the
+   big cards, full-width top strip on the small ones. */
+.nug-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nug-big {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+.nug-big .nug-body {
+  padding: 1.2rem 1.3rem 1.2rem;
+}
+.nuggets-sm .nug-media {
+  height: 7rem;
+}
+.more-title {
+  margin: 2.4rem 0 0.5rem;
+}
+.more-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  columns: 2;
+  column-gap: 3rem;
+}
+.more-list li {
+  margin-bottom: 0.45rem;
+  break-inside: avoid;
+}
+@media (max-width: 46rem) {
+  .more-list { columns: 1; }
 }
 .nug-tag {
   display: inline-block;
@@ -697,7 +795,7 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
   color: var(--ink-soft);
   font-size: 0.97rem;
 }
-@media (max-width: 46rem) {
+@media (max-width: 52rem) {
   .split { grid-template-columns: 1fr; gap: 1.6rem; }
   .split-reverse .split-copy { order: -1; }
 }
@@ -862,7 +960,7 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
 /* ── Plans ─────────────────────────────────────────────────── */
 .plans {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
   gap: 1.2rem;
   margin: 1rem 0 0.8rem;
   max-width: 46rem;
@@ -885,13 +983,12 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
   font-size: 1.05rem;
 }
 .plan-price {
-  font-family: ui-serif, "New York", Georgia, serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 640;
+  letter-spacing: -0.02em;
   margin: 0.1rem 0 0.8rem;
 }
 .plan-once {
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--ink-soft);
@@ -931,6 +1028,17 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
   gap: 2rem;
   align-items: center;
 }
+.mcp-mark {
+  display: block;
+  color: var(--steel);
+  margin-bottom: 0.8rem;
+}
+.section-icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--steel);
+  margin-bottom: 0.5rem;
+}
 .mcp h3 {
   margin: 0 0 0.4rem;
   font-size: 1.25rem;
@@ -941,29 +1049,93 @@ main > section.hero { padding: 5.5rem 0 3.5rem; }
   margin-bottom: 0.7rem;
 }
 .mcp p:last-child { margin-bottom: 0; }
-.mcp-tools {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.5rem;
-  font-size: 0.88rem;
+.callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  background: color-mix(in srgb, var(--azure) 7%, transparent);
+  border: 1px solid color-mix(in srgb, var(--azure) 20%, var(--hairline));
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
   color: var(--ink-soft);
 }
-.mcp-tools code { margin-right: 0.5em; }
-@media (max-width: 46rem) {
+.callout i {
+  color: var(--azure);
+  margin-top: 0.2em;
+}
+.ai-row {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.ai-row li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0.45rem;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+}
+.ai-row img { display: block; }
+/* Example conversation */
+.mcp-chat {
+  display: grid;
+  gap: 0.6rem;
+  align-content: center;
+}
+.bubble {
+  margin: 0;
+  max-width: 88%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 16px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.bubble.user {
+  justify-self: end;
+  background: var(--azure);
+  color: var(--azure-ink);
+  border-bottom-right-radius: 5px;
+}
+.bubble.agent {
+  justify-self: start;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-bottom-left-radius: 5px;
+}
+.mcp-tools {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.mcp-tools li {
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.1em 0.65em;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.mcp-tools code { background: none; padding: 0; font-size: 1em; }
+@media (max-width: 52rem) {
   .mcp { grid-template-columns: 1fr; gap: 1.2rem; }
 }
 
 /* ── Trust grid (privacy) ──────────────────────────────────── */
 .trust {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
   gap: 1.4rem 2rem;
   margin: 1.4rem 0 1.6rem;
 }
 .trust h3 {
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 1rem;
   font-weight: 650;
   margin: 0 0 0.25rem;

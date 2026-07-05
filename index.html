@@ -6,7 +6,9 @@
   <title>Pinza — Copy what you're looking at</title>
   <meta name="description" content="Pinza is a macOS menu bar app that copies the most useful reference — a URL, a file path, a deep-link back to a note or message — from whatever you're looking at, with one keyboard shortcut. 40+ apps, no setup.">
   <link rel="canonical" href="https://pinza.app/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -44,8 +46,6 @@
       <h1 id="hero-title">Copy what you're looking&nbsp;at.</h1>
       <p class="tagline">One keyboard shortcut. Pinza puts the most useful reference for whatever app you're in straight on your clipboard: the URL of your Safari tab, the path of your selected Finder file, a deep-link to your Mail thread. Paste anywhere.</p>
 
-      <p class="chord" aria-hidden="true"><kbd class="cap">⌃</kbd><kbd class="cap">⌥</kbd><kbd class="cap">C</kbd></p>
-
       <figure class="floating hero-shot collage-shot">
         <img src="/img/screenshots/collage@2x.png" width="1500" height="1305"
              alt="Pinza's recents popover under the menu bar: a search field labeled 'Search 16 pins', a list of recent pins — a group folder, Gmail threads, System Settings panes, a file, an App Store page, a Wikipedia article — with the pin 'Let It Happen - Soulwax Remix' selected, and a floating preview card showing the song's album art on a CD, 'Copied from Spotify, 35 mins ago', icons for seven music services, and the hint 'Press Enter to open or ⌘Enter to copy'.">
@@ -61,7 +61,6 @@
 
   <section id="how" aria-labelledby="how-title">
     <div class="wrap">
-      <span class="eyebrow">How it works</span>
       <h2 id="how-title">Three things, in order</h2>
       <ol class="steps">
         <li>
@@ -132,7 +131,6 @@
 
   <section id="apps" class="band" aria-labelledby="apps-title">
     <div class="wrap wide">
-      <span class="eyebrow">Coverage</span>
       <h2 id="apps-title">One shortcut. Forty-plus apps.</h2>
       <p class="section-lede">Each app handled the way that app deserves — not a generic AppleScript sweep. Anything document-based that Pinza doesn't know by name still gets a sensible fallback.</p>
 
@@ -140,94 +138,97 @@
         <div class="appgroup">
           <h3>Browsers</h3>
           <p class="payoff">the tab's URL — or a highlight link when text is selected</p>
-          <ul class="chips">
-            <li><img src="/img/apps/safari.png" alt="" width="28" height="28">Safari</li>
-            <li><img src="/img/apps/chrome.png" alt="" width="28" height="28">Chrome</li>
-            <li><img src="/img/apps/firefox.png" alt="" width="28" height="28">Firefox</li>
-            <li><span class="mono-chip" aria-hidden="true">A</span>Arc</li>
-            <li><span class="mono-chip" aria-hidden="true">E</span>Edge</li>
-            <li><span class="mono-chip" aria-hidden="true">B</span>Brave</li>
-            <li><span class="mono-chip" aria-hidden="true">V</span>Vivaldi</li>
-            <li><span class="mono-chip" aria-hidden="true">Z</span>Zen</li>
-            <li><span class="mono-chip" aria-hidden="true">C</span>Canary</li>
+          <ul class="bento">
+            <li class="lg" data-app="Safari"><img src="/img/apps/safari.png" alt="Safari" width="84" height="84"></li>
+            <li class="lg" data-app="Chrome"><img src="/img/apps/chrome.png" alt="Chrome" width="84" height="84"></li>
+            <li class="lg" data-app="Firefox"><img src="/img/apps/firefox.png" alt="Firefox" width="84" height="84"></li>
+            <li data-app="Arc"><img src="/img/apps/arc.png" alt="Arc" width="40" height="40"></li>
+            <li data-app="Edge"><img class="sq" src="/img/apps/edge.png" alt="Edge" width="40" height="40"></li>
+            <li data-app="Brave"><img class="sq" src="/img/apps/brave.png" alt="Brave" width="40" height="40"></li>
+            <li data-app="Vivaldi"><img class="sq" src="/img/apps/vivaldi.png" alt="Vivaldi" width="40" height="40"></li>
+            <li data-app="Zen"><img src="/img/apps/zen.png" alt="Zen" width="40" height="40"></li>
+            <li data-app="Chrome Canary"><img class="sq" src="/img/apps/chrome-canary.png" alt="Chrome Canary" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Terminals</h3>
           <p class="payoff">the shell's working directory — or ssh://user@host</p>
-          <ul class="chips">
-            <li><img src="/img/apps/terminal.png" alt="" width="28" height="28">Terminal</li>
-            <li><img src="/img/apps/ghostty.png" alt="" width="28" height="28">Ghostty</li>
-            <li><span class="mono-chip" aria-hidden="true">i</span>iTerm2</li>
-            <li><span class="mono-chip" aria-hidden="true">W</span>Warp</li>
-            <li><span class="mono-chip" aria-hidden="true">k</span>kitty</li>
-            <li><span class="mono-chip" aria-hidden="true">A</span>Alacritty</li>
+          <ul class="bento">
+            <li class="lg" data-app="Terminal"><img src="/img/apps/terminal.png" alt="Terminal" width="84" height="84"></li>
+            <li class="lg" data-app="iTerm2"><img src="/img/apps/iterm2.png" alt="iTerm2" width="84" height="84"></li>
+            <li data-app="Ghostty"><img src="/img/apps/ghostty.png" alt="Ghostty" width="40" height="40"></li>
+            <li data-app="Warp"><img src="/img/apps/warp.png" alt="Warp" width="40" height="40"></li>
+            <li data-app="kitty"><img src="/img/apps/kitty.png" alt="kitty" width="40" height="40"></li>
+            <li data-app="Alacritty"><img src="/img/apps/alacritty.png" alt="Alacritty" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Editors &amp; IDEs</h3>
           <p class="payoff">a deep-link that reopens the file you're editing</p>
-          <ul class="chips">
-            <li><span class="mono-chip" aria-hidden="true">X</span>Xcode</li>
-            <li><span class="mono-chip" aria-hidden="true">V</span>VS Code</li>
-            <li><span class="mono-chip" aria-hidden="true">C</span>Cursor</li>
-            <li><span class="mono-chip" aria-hidden="true">W</span>Windsurf</li>
-            <li><span class="mono-chip" aria-hidden="true">J</span>JetBrains IDEs</li>
+          <ul class="bento">
+            <li class="lg" data-app="Xcode"><img class="sq" src="/img/apps/xcode.png" alt="Xcode" width="84" height="84"></li>
+            <li class="lg" data-app="VS Code"><img src="/img/apps/vscode.png" alt="VS Code" width="84" height="84"></li>
+            <li data-app="Cursor"><img class="sq" src="/img/apps/cursor.png" alt="Cursor" width="40" height="40"></li>
+            <li data-app="Windsurf"><picture>
+              <source srcset="/img/ai/windsurf-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="/img/ai/windsurf-light.png" alt="Windsurf" width="40" height="40">
+            </picture></li>
+            <li data-app="JetBrains IDEs"><img src="/img/apps/jetbrains.png" alt="JetBrains IDEs" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Mail, tasks &amp; messages</h3>
           <p class="payoff">a link back to the exact message, event, or to-do</p>
-          <ul class="chips">
-            <li><img src="/img/apps/mail.png" alt="" width="28" height="28">Mail</li>
-            <li><img src="/img/apps/mimestream.png" alt="" width="28" height="28">Mimestream</li>
-            <li><img src="/img/apps/reminders.png" alt="" width="28" height="28">Reminders</li>
-            <li><img src="/img/apps/calendar.png" alt="" width="28" height="28">Calendar</li>
-            <li><img src="/img/apps/slack-app.png" alt="" width="28" height="28">Slack</li>
-            <li><span class="mono-chip" aria-hidden="true">T</span>Things 3</li>
+          <ul class="bento">
+            <li class="lg" data-app="Mail"><img src="/img/apps/mail.png" alt="Mail" width="84" height="84"></li>
+            <li class="lg" data-app="Slack"><img src="/img/apps/slack-app.png" alt="Slack" width="84" height="84"></li>
+            <li data-app="Mimestream"><img src="/img/apps/mimestream.png" alt="Mimestream" width="40" height="40"></li>
+            <li data-app="Reminders"><img src="/img/apps/reminders.png" alt="Reminders" width="40" height="40"></li>
+            <li data-app="Calendar"><img src="/img/apps/calendar.png" alt="Calendar" width="40" height="40"></li>
+            <li data-app="Things 3"><img src="/img/apps/things.png" alt="Things 3" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Notes &amp; writing</h3>
           <p class="payoff">a deep-link that reopens the note</p>
-          <ul class="chips">
-            <li><img src="/img/apps/notes.png" alt="" width="28" height="28">Notes</li>
-            <li><img src="/img/apps/notion-app.png" alt="" width="28" height="28">Notion</li>
-            <li><img src="/img/apps/obsidian.png" alt="" width="28" height="28">Obsidian</li>
-            <li><span class="mono-chip" aria-hidden="true">B</span>Bear</li>
-            <li><span class="mono-chip" aria-hidden="true">S</span>SnippetsLab</li>
+          <ul class="bento">
+            <li class="lg" data-app="Notes"><img src="/img/apps/notes.png" alt="Notes" width="84" height="84"></li>
+            <li class="lg" data-app="Notion"><img src="/img/apps/notion-app.png" alt="Notion" width="84" height="84"></li>
+            <li data-app="Obsidian"><img src="/img/apps/obsidian.png" alt="Obsidian" width="40" height="40"></li>
+            <li data-app="Bear"><img class="sq" src="/img/apps/bear.png" alt="Bear" width="40" height="40"></li>
+            <li data-app="SnippetsLab"><img class="sq" src="/img/apps/snippetslab.png" alt="SnippetsLab" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Media</h3>
           <p class="payoff">a link to the song, episode, or book — cover art included</p>
-          <ul class="chips">
-            <li><img src="/img/apps/spotify-app.png" alt="" width="28" height="28">Spotify</li>
-            <li><img src="/img/apps/apple-music-app.png" alt="" width="28" height="28">Apple Music</li>
-            <li><img src="/img/apps/podcasts.png" alt="" width="28" height="28">Podcasts</li>
-            <li><img src="/img/apps/books.png" alt="" width="28" height="28">Apple Books</li>
-            <li><span class="mono-chip" aria-hidden="true">F</span>Feishin</li>
+          <ul class="bento">
+            <li class="lg" data-app="Spotify"><img src="/img/apps/spotify-app.png" alt="Spotify" width="84" height="84"></li>
+            <li class="lg" data-app="Apple Music"><img src="/img/apps/apple-music-app.png" alt="Apple Music" width="84" height="84"></li>
+            <li data-app="Podcasts"><img src="/img/apps/podcasts.png" alt="Podcasts" width="40" height="40"></li>
+            <li data-app="Apple Books"><img src="/img/apps/books.png" alt="Apple Books" width="40" height="40"></li>
+            <li data-app="Feishin"><img src="/img/apps/feishin.png" alt="Feishin" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Files &amp; system</h3>
           <p class="payoff">paths, PDF pages, the exact Settings pane</p>
-          <ul class="chips">
-            <li><img src="/img/apps/finder.png" alt="" width="28" height="28">Finder</li>
-            <li><img src="/img/apps/preview.png" alt="" width="28" height="28">Preview</li>
-            <li><img src="/img/apps/skim.png" alt="" width="28" height="28">Skim</li>
-            <li><img src="/img/apps/system-settings.png" alt="" width="28" height="28">System Settings</li>
-            <li><img src="/img/apps/app-store.png" alt="" width="28" height="28">App Store</li>
-            <li><img src="/img/apps/setapp.png" alt="" width="28" height="28">Setapp</li>
+          <ul class="bento">
+            <li class="lg" data-app="Finder"><img src="/img/apps/finder.png" alt="Finder" width="84" height="84"></li>
+            <li class="lg" data-app="Preview"><img src="/img/apps/preview.png" alt="Preview" width="84" height="84"></li>
+            <li data-app="Skim"><img src="/img/apps/skim.png" alt="Skim" width="40" height="40"></li>
+            <li data-app="System Settings"><img src="/img/apps/system-settings.png" alt="System Settings" width="40" height="40"></li>
+            <li data-app="App Store"><img src="/img/apps/app-store.png" alt="App Store" width="40" height="40"></li>
+            <li data-app="Setapp"><img src="/img/apps/setapp.png" alt="Setapp" width="40" height="40"></li>
           </ul>
         </div>
         <div class="appgroup">
           <h3>Everything else</h3>
           <p class="payoff">document-based apps fall back to the open file's path</p>
-          <ul class="chips">
-            <li><img src="/img/apps/textedit.png" alt="" width="28" height="28">TextEdit</li>
-            <li><span class="mono-chip" aria-hidden="true">P</span>Pages</li>
-            <li><span class="mono-chip" aria-hidden="true">…</span>any app with documents</li>
+          <ul class="bento">
+            <li class="lg" data-app="TextEdit"><img src="/img/apps/textedit.png" alt="TextEdit" width="84" height="84"></li>
+            <li class="lg" data-app="Pages"><img class="sq" src="/img/apps/pages.png" alt="Pages" width="84" height="84"></li>
+            <li data-app="Any app with documents"><span class="mono-chip" role="img" aria-label="Any app with documents">…</span></li>
           </ul>
         </div>
       </div>
@@ -236,78 +237,133 @@
 
   <section id="details" aria-labelledby="details-title">
     <div class="wrap wide">
-      <span class="eyebrow">The little things</span>
-      <h2 id="details-title">Details you'll notice on day two</h2>
-      <p class="section-lede">Pinza's job takes half a second, so the craft went into the small stuff.</p>
+      <h2 id="details-title">A link can be so much more</h2>
+      <p class="section-lede">A pin carries the detail that makes it worth pasting — the timestamp, the page, the exact sentence you selected.</p>
 
-      <div class="nuggets">
-        <div class="nug">
-          <code class="nug-tag">?t=102</code>
-          <h3>YouTube, with the playhead</h3>
-          <p>Clean youtu.be short links. Opt in per browser, and a paused video's link carries the timestamp — and the channel's name.</p>
+      <div class="nuggets nuggets-lg">
+        <div class="nug nug-big">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">?t=102</code>
+            <h3>YouTube, with the playhead</h3>
+            <p>Clean youtu.be short links. Opt in per browser, and a paused video's link carries the timestamp — and the channel's name.</p>
+          </div>
         </div>
-        <div class="nug">
-          <code class="nug-tag">#:~:text=</code>
-          <h3>Highlight links</h3>
-          <p>Select text on any page and the link reopens to that exact passage. Copy more highlights on the same page and they merge into one link.</p>
+        <div class="nug nug-big">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">#:~:text=</code>
+            <h3>Highlight links</h3>
+            <p>Select text on any page and the link reopens to that exact passage. Copy more highlights on the same page and they merge into one link.</p>
+          </div>
         </div>
-        <div class="nug">
-          <code class="nug-tag">#page=4</code>
-          <h3>PDFs open at your page</h3>
-          <p>Preview and Skim links carry the page you were reading. Works in any browser's PDF viewer; Skim links round-trip perfectly.</p>
+        <div class="nug nug-big">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">#page=4</code>
+            <h3>PDFs open at your page</h3>
+            <p>Preview and Skim links carry the page you were reading. Works in any browser's PDF viewer; Skim links round-trip perfectly.</p>
+          </div>
         </div>
-        <div class="nug">
-          <code class="nug-tag">ssh://</code>
-          <h3>Knows when you're remote</h3>
-          <p>Terminals give the working directory. SSH'd into a server? You get ssh://you@host instead — parsed from the real ssh process.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">gh repo clone</code>
-          <h3>GitHub-aware</h3>
-          <p>A github.com pin also offers the owner/repo slug, HTTPS and SSH clone URLs, the gh command, and raw-file URLs.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">slack://</code>
-          <h3>That message, exactly</h3>
-          <p>In Slack, Pinza copies a link to the selected message — the archive URL, or a slack:// deep-link that opens the app.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">things:///</code>
-          <h3>Things, kept live</h3>
-          <p>A Things pin knows its to-do's status. Complete, cancel, or reopen it from Pinza — and see when it's been deleted.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">3 files</code>
-          <h3>Real files, plural</h3>
-          <p>Select three files in Finder and the copy pastes as three actual files — into Mail, Slack, or another Finder window.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">⌘Z</code>
-          <h3>Rename from the card</h3>
-          <p>Just copied a file? Rename it right on the confirmation card — with an undo chip, and a warning if you change the extension.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">this evening</code>
-          <h3>Remind me</h3>
-          <p>Any pin becomes an Apple Reminder: in an hour, this evening, tomorrow morning, or a time you pick. Write-only — Pinza never reads your reminders.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">⇧⌘D</code>
-          <h3>Cards</h3>
-          <p>Pop a pin out of the list as a floating note. Keep up to fifteen on screen; they survive a relaunch.</p>
-        </div>
-        <div class="nug">
-          <code class="nug-tag">1–9</code>
-          <h3>Copy as, from the keyboard</h3>
-          <p>While the confirmation card is up, the number keys pick a format. No mouse, no menu diving.</p>
+        <div class="nug nug-big">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">ssh://</code>
+            <h3>Knows when you're remote</h3>
+            <p>Terminals give the working directory. SSH'd into a server? You get ssh://you@host instead — parsed from the real ssh process.</p>
+          </div>
         </div>
       </div>
+
+      <div class="nuggets nuggets-sm">
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">gh repo clone</code>
+            <h3>GitHub-aware</h3>
+            <p>A github.com pin also offers the owner/repo slug, HTTPS and SSH clone URLs, the gh command, and raw-file URLs.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">slack://</code>
+            <h3>That message, exactly</h3>
+            <p>In Slack, Pinza copies a link to the selected message — the archive URL, or a slack:// deep-link that opens the app.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">things:///</code>
+            <h3>Things, kept live</h3>
+            <p>A Things pin knows its to-do's status. Complete, cancel, or reopen it from Pinza — and see when it's been deleted.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">3 files</code>
+            <h3>Real files, plural</h3>
+            <p>Select three files in Finder and the copy pastes as three actual files — into Mail, Slack, or another Finder window.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">⌘Z</code>
+            <h3>Rename from the card</h3>
+            <p>Just copied a file? Rename it right on the confirmation card — with an undo chip, and a warning if you change the extension.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">this evening</code>
+            <h3>Remind me</h3>
+            <p>Any pin becomes an Apple Reminder: in an hour, this evening, tomorrow morning, or a time you pick. Write-only — Pinza never reads your reminders.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">⇧⌘D</code>
+            <h3>Cards</h3>
+            <p>Pop a pin out of the list as a floating note. Keep up to fifteen on screen; they survive a relaunch.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">1–9</code>
+            <h3>Copy as, from the keyboard</h3>
+            <p>While the confirmation card is up, the number keys pick a format. No mouse, no menu diving.</p>
+          </div>
+        </div>
+        <div class="nug">
+          <div class="nug-media"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+          <div class="nug-body">
+            <code class="nug-tag">?pvs=</code>
+            <h3>Notion links, cleaned</h3>
+            <p>A Notion pin drops the tracking parameter before it reaches your clipboard. Clean links only.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="more-title">More</h3>
+      <ul class="more-list">
+        <li>Copy as ROT13, escaped path, or AppleScript path — the long tail of formats is all there</li>
+        <li>SHA-256 hashes and Base64 data URIs, for files up to 50&nbsp;MB</li>
+        <li>The confirmation card docks in any of six screen corners; Space holds it open</li>
+        <li>Multi-select in Recents, with a ⌘K action menu</li>
+        <li>Deleted a pin? Undo brings it back — with a little poof</li>
+        <li>The default shortcut is AZERTY-safe</li>
+      </ul>
     </div>
   </section>
 
   <section id="formats" class="band" aria-labelledby="formats-title">
     <div class="wrap wide">
-      <span class="eyebrow">Copy as…</span>
       <h2 id="formats-title">Paste it the way the destination wants it</h2>
       <p class="section-lede">Every pin carries more than one shape. The default is right for most pastes; the Copy&nbsp;as… menu has the rest — all of it in the free tier.</p>
 
@@ -365,7 +421,6 @@
 
   <section id="recents" aria-labelledby="recents-title">
     <div class="wrap wide">
-      <span class="eyebrow">Recents</span>
       <h2 id="recents-title">Everything you copied, one keystroke away</h2>
 
       <div class="split split-reverse">
@@ -393,7 +448,6 @@
 
   <section id="pro" class="band" aria-labelledby="pro-title">
     <div class="wrap wide">
-      <span class="eyebrow">Free vs Pro</span>
       <h2 id="pro-title">Free for the core. Pro for the power.</h2>
       <p class="section-lede">The free tier is the real product — every app, both shortcuts, forever. Not a trial.</p>
 
@@ -419,7 +473,7 @@
             <li>Everything in the free tier</li>
             <li>Unlimited Recents history, kept forever</li>
             <li>Recently Deleted Bin, protected by Touch&nbsp;ID</li>
-            <li>Local MCP server for Claude &amp; friends</li>
+            <li>Local MCP server for your AI agent</li>
             <li>5 Macs per license</li>
             <li>Roadmap features included as they ship — Groups, tags, iCloud sync</li>
           </ul>
@@ -430,24 +484,52 @@
 
       <div class="mcp">
         <div class="mcp-copy">
-          <h3>Your pins, available to Claude</h3>
-          <p>Pinza Pro runs a local MCP server, so Claude Desktop — or any MCP client — can search your pins, read their details, or pop one up as a Card. Five tools, each with its own toggle; the only one that can write to your clipboard ships turned off.</p>
-          <p>It's a Unix socket on your Mac with owner-only permissions, and Pinza verifies the connecting process. Nothing listens on a port; nothing leaves the machine.</p>
+          <svg class="mcp-mark" viewBox="0 0 195 195" width="56" height="56" fill="none" aria-hidden="true">
+            <path d="M25 97.8528L92.8823 29.9706C102.255 20.598 117.451 20.598 126.823 29.9706V29.9706C136.196 39.3431 136.196 54.5391 126.823 63.9117L75.5581 115.177" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+            <path d="M76.2653 114.47L126.823 63.9117C136.196 54.5391 151.392 54.5391 160.765 63.9117L161.118 64.2652C170.491 73.6378 170.491 88.8338 161.118 98.2063L99.7248 159.6C96.6006 162.724 96.6006 167.789 99.7248 170.913L112.331 183.52" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+            <path d="M109.853 46.9411L59.6482 97.1457C50.2757 106.518 50.2757 121.714 59.6482 131.087V131.087C69.0208 140.459 84.2168 140.459 93.5894 131.087L143.794 80.8822" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+          </svg>
+          <h3>Your pins, available to your AI agent</h3>
+          <p>Pinza Pro runs a local MCP server, so your favorite agent — Claude, Codex, Gemini, Copilot, or any other MCP client — can search your pins, read their details, or pop one up as a Card. Five tools, each with its own toggle; the only one that can write to your clipboard ships turned off.</p>
+          <p class="callout"><i class="fa-solid fa-lock" aria-hidden="true"></i> <span>Pinza's MCP server is fully local: nothing listens on a port, and nothing leaves your Mac. Turn it on or off per session.</span></p>
+          <ul class="ai-row" aria-label="Works with">
+            <li data-app="Claude"><img src="/img/ai/claude.png" alt="Claude" width="36" height="36"></li>
+            <li data-app="Codex"><picture>
+              <source srcset="/img/ai/codex-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="/img/ai/codex-light.png" alt="Codex" width="36" height="36">
+            </picture></li>
+            <li data-app="Gemini"><img src="/img/ai/gemini.png" alt="Gemini" width="36" height="36"></li>
+            <li data-app="GitHub Copilot"><img src="/img/ai/copilot.png" alt="GitHub Copilot" width="36" height="36"></li>
+            <li data-app="Cursor"><picture>
+              <source srcset="/img/ai/cursor-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="/img/ai/cursor-light.png" alt="Cursor" width="36" height="36">
+            </picture></li>
+            <li data-app="Windsurf"><picture>
+              <source srcset="/img/ai/windsurf-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="/img/ai/windsurf-light.png" alt="Windsurf" width="36" height="36">
+            </picture></li>
+            <li data-app="Perplexity"><img src="/img/ai/perplexity.png" alt="Perplexity" width="36" height="36"></li>
+          </ul>
         </div>
-        <ul class="mcp-tools" aria-label="MCP tools">
-          <li><code>search_pins</code> full-text search</li>
-          <li><code>list_pins</code> filter by app, site, or date</li>
-          <li><code>get_pin</code> details &amp; highlights</li>
-          <li><code>reveal_pin</code> show as a Card</li>
-          <li><code>copy_pin</code> off by default</li>
-        </ul>
+        <div class="mcp-chat" role="img" aria-label="An example conversation with an AI agent. You: Which links did I copy from Safari this morning? Agent: Three pins — the NSPanel docs, a WWDC session, and a Swift forums thread. Want them as Markdown links? You: Yes — and pop the WWDC one up as a Card.">
+          <p class="bubble user" aria-hidden="true">Which links did I copy from Safari this morning?</p>
+          <p class="bubble agent" aria-hidden="true">Three pins: the NSPanel docs, a WWDC session, and a Swift forums thread. Want them as Markdown links?</p>
+          <p class="bubble user" aria-hidden="true">Yes — and pop the WWDC one up as a Card.</p>
+          <ul class="mcp-tools" aria-label="MCP tools">
+            <li><code>search_pins</code></li>
+            <li><code>list_pins</code></li>
+            <li><code>get_pin</code></li>
+            <li><code>reveal_pin</code></li>
+            <li><code>copy_pin</code></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="privacy" aria-labelledby="privacy-title">
     <div class="wrap">
-      <span class="eyebrow">Privacy</span>
+      <span class="section-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
       <h2 id="privacy-title">Your links stay on your Mac</h2>
       <div class="trust">
         <div>
@@ -473,7 +555,6 @@
 
   <section id="craft" aria-labelledby="craft-title">
     <div class="wrap">
-      <span class="eyebrow">Character</span>
       <h2 id="craft-title">Stays out of your way</h2>
       <p>Lives in the menu bar. No Dock icon. One keyboard shortcut, re-mappable. A recents list when you want to go back to something you copied earlier. That's the whole product.</p>
       <ul class="craft-strip">
@@ -489,7 +570,6 @@
 
   <section id="faq" class="faq" aria-labelledby="faq-title">
     <div class="wrap">
-      <span class="eyebrow">Questions</span>
       <h2 id="faq-title">FAQ</h2>
 
       <details>
@@ -510,7 +590,7 @@
       </details>
       <details>
         <summary>What's the MCP server?</summary>
-        <p>MCP is the open protocol AI apps use to talk to local tools. Pinza Pro's MCP server lets Claude Desktop search and read your pins — locally, over a Unix socket, with nothing leaving your Mac. You paste one snippet into Claude's config and it works.</p>
+        <p>MCP is the open protocol AI apps use to talk to local tools. Pinza Pro's MCP server lets your AI agent — Claude, Codex, Gemini, or any MCP client — search and read your pins locally, over a Unix socket, with nothing leaving your Mac. You paste one snippet into the agent's config and it works.</p>
       </details>
       <details>
         <summary>Apple Silicon or Intel?</summary>
