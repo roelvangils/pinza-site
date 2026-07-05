@@ -1028,17 +1028,18 @@ img.sq { border-radius: 22.5%; }
   border: 1px solid var(--hairline);
   border-radius: 16px;
   box-shadow: var(--shadow-soft);
-  padding: 1.6rem 1.7rem;
+  padding: 2.4rem 2.6rem;
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-  gap: 2rem;
+  gap: 2rem 3.5rem;
   align-items: center;
 }
 .mcp-mark {
   display: block;
   color: var(--steel);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
+.mcp h3 { margin-bottom: 0.7rem; }
 .section-icon {
   display: block;
   font-size: 1.5rem;
@@ -1072,12 +1073,12 @@ img.sq { border-radius: 22.5%; }
 }
 .ai-row {
   list-style: none;
-  margin: 1.4rem 0 0;
+  margin: 1.8rem 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.1rem;
+  gap: 1.4rem;
 }
 .ai-row li {
   position: relative;
@@ -1086,7 +1087,7 @@ img.sq { border-radius: 22.5%; }
 /* Example conversation */
 .mcp-chat {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.8rem;
   align-content: center;
 }
 .bubble {
