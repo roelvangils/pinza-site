@@ -1071,13 +1071,19 @@ img.sq { border-radius: 22.5%; }
   color: var(--azure);
   margin-top: 0.2em;
 }
+.mcp-side {
+  display: grid;
+  gap: 1.5rem;
+  align-content: center;
+}
 .ai-row {
   list-style: none;
-  margin: 1.8rem 0 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1.4rem;
 }
 .ai-row li {
@@ -1088,7 +1094,6 @@ img.sq { border-radius: 22.5%; }
 .mcp-chat {
   display: grid;
   gap: 0.8rem;
-  align-content: center;
 }
 .bubble {
   margin: 0;
@@ -1148,6 +1153,70 @@ img.sq { border-radius: 22.5%; }
   background: var(--card);
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
+}
+
+/* ── Scroll reveals (zero-JS) ──────────────────────────────────
+   CSS scroll-driven animations: progress is tied to the element's
+   own journey into the viewport, so it needs no JavaScript and
+   reverses gracefully when scrolling back up. Doubly gated: only
+   for browsers that support view() timelines AND users who allow
+   motion. Everyone else sees the finished state.
+
+   Reusable: put class="reveal" on anything that should fade-rise
+   in as it scrolls into view. For staggered children, name a
+   view-timeline on the parent and offset each child's
+   animation-range — see the chat bubbles below. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+
+    /* The MCP side column: the AI icons pop in one by one, then
+       the bubbles land one after another — users' from the right,
+       the agent's from the left. All on one shared timeline. */
+    .mcp-side {
+      view-timeline: --mcp-side;
+    }
+    .ai-row li {
+      animation: pop-in linear both;
+      animation-timeline: --mcp-side;
+    }
+    .ai-row li:nth-child(1) { animation-range: entry 5% entry 17%; }
+    .ai-row li:nth-child(2) { animation-range: entry 11% entry 23%; }
+    .ai-row li:nth-child(3) { animation-range: entry 17% entry 29%; }
+    .ai-row li:nth-child(4) { animation-range: entry 23% entry 35%; }
+    .ai-row li:nth-child(5) { animation-range: entry 29% entry 41%; }
+    .mcp-chat .bubble {
+      animation: bubble-in-right linear both;
+      animation-timeline: --mcp-side;
+    }
+    .mcp-chat .bubble.agent {
+      animation-name: bubble-in-left;
+    }
+    .mcp-chat .bubble:nth-child(1) { animation-range: entry 35% entry 60%; }
+    .mcp-chat .bubble:nth-child(2) { animation-range: entry 50% entry 78%; }
+    .mcp-chat .bubble:nth-child(3) { animation-range: entry 65% entry 95%; }
+  }
+}
+@keyframes pop-in {
+  from { opacity: 0; scale: 0.3; }
+  70% { opacity: 1; scale: 1.12; }
+  to { opacity: 1; scale: 1; }
+}
+@keyframes reveal-rise {
+  from { opacity: 0; translate: 0 1.2rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes bubble-in-right {
+  from { opacity: 0; translate: 1.6rem 0.5rem; scale: 0.94; }
+  to { opacity: 1; translate: 0 0; scale: 1; }
+}
+@keyframes bubble-in-left {
+  from { opacity: 0; translate: -1.6rem 0.5rem; scale: 0.94; }
+  to { opacity: 1; translate: 0 0; scale: 1; }
 }
 
 /* ── Utilities ─────────────────────────────────────────────── */
