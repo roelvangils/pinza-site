@@ -25,7 +25,9 @@ Three extras work in any of them:
 - **PDF tabs** — when the tab is showing a PDF, Pinza offers to download it and copy a file reference instead.
 - **[YouTube](/help/integrations/youtube/)** — clean `youtu.be` links, and timestamps if you enable the playhead.
 
-> Firefox exposes the least to automation, so its support is best-effort: the URL comes from reading the address bar, and highlight links can be less reliable than elsewhere.
+::: help
+Firefox exposes the least to automation, so its support is best-effort: the URL comes from reading the address bar, and highlight links can be less reliable than elsewhere.
+:::
 
 ## Terminals
 
@@ -44,7 +46,9 @@ Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.
 | Preview | A link to the PDF **at the current page** (`#page=12`) |
 | Skim | The same, as a `skim://` link that reopens Skim on that page |
 
-> Preview's page links are honored by browsers, but Preview itself ignores the page number when reopening a file — it returns to wherever you last were. Skim links round-trip perfectly; if you live in PDFs, Skim is the better companion.
+::: hint
+Preview's page links are honored by browsers, but Preview itself ignores the page number when reopening a file — it returns to wherever you last were. Skim links round-trip perfectly; if you live in PDFs, Skim is the better companion.
+:::
 
 {% shot "a PDF open in Skim on page 37, with the HUD showing the copied skim:// link ending in #page=37.", "hud" %}
 
@@ -63,7 +67,9 @@ Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.
 | Notion | A link to the current page |
 | SnippetsLab | A link to the selected snippet |
 
-> Notes, Reminders, and Calendar offer no real automation interface, so these are driven through their menus — they work, but count them as best-effort. Obsidian links are parsed from the window title; a ` - ` inside a vault or note name can confuse them.
+::: help
+Notes, Reminders, and Calendar offer no real automation interface, so these are driven through their menus — they work, but count them as best-effort. Obsidian links are parsed from the window title; a ` - ` inside a vault or note name can confuse them.
+:::
 
 {% shot "a Things 3 pin's hover tooltip: the to-do with its live status (Open) and the status-aware quick actions (Complete, Cancel) in the pin's menu.", "dialog" %}
 
@@ -83,7 +89,9 @@ Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.
 | Setapp | The setapp.com page of the app you're viewing |
 | Feishin | A Spotify search link for the playing track (self-hosted libraries have no shareable URLs) |
 
-> App Store and Setapp are driven through their share buttons, the most fragile mechanism Pinza uses. Apple Books resolves the link online, which can take half a second.
+::: help
+App Store and Setapp are driven through their share buttons, the most fragile mechanism Pinza uses. Apple Books resolves the link online, which can take half a second.
+:::
 
 ## Code editors
 

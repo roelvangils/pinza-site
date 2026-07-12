@@ -12,6 +12,10 @@ With a Mistral API key, the Copy as… menu on any PDF gains **Copy as Markdown 
 
 For PDFs that already contain text, Pinza extracts it on your Mac with no key and no network: **Copy as… → Copy as Text**. If that comes back empty, the PDF is a scan — that's what OCR is for.
 
+::: help
+OCR stands for optical character recognition: software that *reads* the text in an image rather than copying embedded text. It's what turns a scanned contract or a photographed page into Markdown you can actually use.
+:::
+
 ## Setup
 
 1. Create an API key at [console.mistral.ai](https://console.mistral.ai). Mistral's usage-based pricing applies; OCR costs a fraction of a cent per page.

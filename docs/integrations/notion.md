@@ -24,6 +24,10 @@ Notion only lets an integration read pages you've explicitly shared with it. For
 
 If you copy a page you haven't shared yet, Pinza tells you exactly that instead of failing silently.
 
+::: hint
+Subpages inherit the connection from their parent. Share your workspace's few top-level pages with Pinza once, and everything beneath them just works.
+:::
+
 ## Using it
 
 1. With the page open — in the Notion app or in a browser — press your Copy shortcut.

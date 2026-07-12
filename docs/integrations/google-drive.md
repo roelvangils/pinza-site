@@ -25,6 +25,10 @@ Pinza asks for **read-only** access to Drive. It never modifies or deletes anyth
    - **CSV** — for Sheets.
    - **Office file / PDF** — downloads the document to `~/Downloads` and puts a file reference on your clipboard, ready to attach or drag.
 
+::: hint
+After a download, the clipboard holds the file itself, not a path. Paste straight into a Mail message or a Slack conversation and the file is attached.
+:::
+
 The menu also shows the document's sharing state — Public, Anyone at your domain, or Restricted — so you know what the person you're sending the link to will actually see.
 
 {% shot "the Copy as… menu for a Google Doc: the Drive entries (AI-Ready Markdown, Word file, PDF) plus the sharing-state line, e.g. “Restricted — only invited people”.", "menu" %}

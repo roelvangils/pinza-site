@@ -22,7 +22,9 @@ Out of the box, your Recents shortcut opens a compact popover from the menu bar 
 
 The same Recents shortcut now opens the Launcher. You can switch back anytime.
 
-> The HUD's **Reveal in Launcher** button ({% kbd "⌘" %}{% kbd "L" %}) opens the Launcher too, with that pin already selected — regardless of your window style.
+::: hint
+The HUD's **Reveal in Launcher** button ({% kbd "⌘" %}{% kbd "L" %}) opens the Launcher too, with that pin already selected — regardless of your window style.
+:::
 
 ## Finding things
 
@@ -41,6 +43,10 @@ The right-hand preview follows your selection. Drag the divider between the pane
 The Launcher's core convention: **{% kbd "↩" %} copies, {% kbd "⌘" %}{% kbd "↩" %} opens.** (The compact popover is the other way around — there, {% kbd "↩" %} opens.)
 
 Right-click any pin — or press {% kbd "⌘" %}{% kbd "K" %} — for the full actions menu.
+
+::: hint
+Pins are draggable. Select one or several and drag them straight out of the Launcher — into a message as links, into a folder as files, wherever a drop makes sense.
+:::
 
 ### Selection and navigation
 
@@ -80,6 +86,10 @@ Right-click any pin — or press {% kbd "⌘" %}{% kbd "K" %} — for the full a
 | {% kbd "⇧" %}{% kbd "⌘" %}{% kbd "D" %} | Float the pin as a Card |
 | {% kbd "⌘" %}{% kbd "X" %} or {% kbd "⌘" %}{% kbd "⌫" %} | Delete the selection |
 | {% kbd "⌘" %}{% kbd "Z" %} | Undo a deletion ({% kbd "⇧" %}{% kbd "⌘" %}{% kbd "Z" %} redoes) |
+
+::: help
+Deleted something you shouldn't have? {% kbd "⌘" %}{% kbd "Z" %} brings it back on the spot, and with Pinza Pro the [Recently Deleted Bin](/help/settings/#recently-deleted) keeps deleted pins for 30 days by default.
+:::
 
 ### Window and app
 

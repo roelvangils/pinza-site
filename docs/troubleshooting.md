@@ -17,6 +17,10 @@ Work down this list:
 2. **Toggle it off and on.** After a Pinza update, macOS sometimes keeps the checkbox on while silently revoking the grant. Toggle Pinza off and back on in that same list.
 
 {% shot "System Settings → Privacy & Security → Accessibility with Pinza's toggle — annotated “turn it off, then on again” — the fix for most dead-shortcut reports." %}
+
+::: help
+Toggle stuck? When the switch is on but Pinza still can't read anything, remove Pinza from the Accessibility list entirely (select it and click the **−** button), then relaunch Pinza and grant the permission fresh. macOS occasionally holds on to a stale entry, and this clears it.
+:::
 3. **Check for a shortcut conflict.** Another app may claim the same combination. Open Pinza's **Settings → Shortcuts** — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.
 
 {% shot "Settings → Shortcuts with a recorder showing a conflict warning for a combination already taken by another app.", "dialog" %}
@@ -52,6 +56,12 @@ Clicked **Don't Allow** by accident? Go to **System Settings → Privacy & Secur
 ## The HUD is in the way
 
 Drag it to another corner — it snaps to the nearest zone and remembers. Or change **Settings → General → Copy Confirmation Position**. The card can't go top-right; macOS notifications live there.
+
+## Deleted a pin by accident
+
+::: hint
+{% kbd "⌘" %}{% kbd "Z" %} in the [Launcher](/help/launcher/) undoes a deletion on the spot. With Pinza Pro, deleted pins also land in the Recently Deleted Bin, where they stay restorable for 30 days by default.
+:::
 
 ## Copying stopped working after a macOS update
 

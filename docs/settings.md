@@ -8,7 +8,11 @@ order: 1
 
 # Settings reference
 
-Open Settings from the menu bar icon's right-click menu, or with {% kbd "⌘" %}{% kbd "," %} whenever a Pinza window (or the HUD) is up. The sidebar has a search field — start typing any setting's name and jump straight to it.
+Open Settings from the menu bar icon's right-click menu, or with {% kbd "⌘" %}{% kbd "," %} whenever a Pinza window (or the HUD) is up.
+
+::: hint
+Looking for one specific option? Type its name into the sidebar's search field — every setting on this page is indexed, and Pinza jumps straight to it.
+:::
 
 {% shot "the Settings window as a whole: the sidebar with its search field and the nine panes grouped (Core, History, Account), General selected." %}
 
@@ -84,7 +88,9 @@ Your pin history and how it's presented:
 
 {% shot "the Recently Pinned pane: the Show-in-menu slider, the favicon and rich-preview toggles, and the CD/vinyl disc options — with the Pro lock badge on the history footer." %}
 
-> The free version keeps your latest **25 pins**; pins you've pinned to the top don't count against the cap. Pinza Pro removes the limit and keeps your entire history.
+::: help
+The free version keeps your latest **25 pins**; pins you've pinned to the top don't count against the cap. Pinza Pro removes the limit and keeps your entire history — see [What does Pro add?](/help/faq/#what-does-pro-add)
+:::
 
 ## Recently Deleted
 

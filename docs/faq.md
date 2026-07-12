@@ -37,6 +37,10 @@ Reading the frontmost app's state — the tab URL, the selected file — uses ma
 
 On your Mac, in an encrypted SQLite database under `~/Library/Application Support/Pinza/`. The encryption key lives in your Keychain and never leaves the device. There's no account and no analytics.
 
+::: help
+Want the full technical picture? The [privacy policy](/privacy/) lists every network connection Pinza can make — favicons, previews, the integrations you enable — and how to turn each one off.
+:::
+
 ## Apple Silicon or Intel?
 
 Pinza is a universal binary and runs natively on both. It needs macOS 14 Sonoma or newer.

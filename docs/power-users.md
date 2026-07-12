@@ -80,6 +80,10 @@ A few conventions:
 - `actions.copyFormats` holds your [Copy as… configuration](/help/actions/) — order, visibility, and your custom formats — which makes custom formats portable between Macs.
 - Secrets are **not** in this file. The Mistral API key and all account sign-ins live in the macOS Keychain.
 
+::: hint
+The file is made for dotfiles: version it in Git, symlink it from your dotfiles repo, or copy it to a new Mac — your custom [copy formats](/help/actions/) travel along in `actions.copyFormats`.
+:::
+
 {% shot "config.json open in a code editor (VS Code or BBEdit) next to Pinza's Settings window, the same value visible in both — showing the mirror at work." %}
 
 ## The pinza:// URL scheme

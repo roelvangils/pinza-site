@@ -60,6 +60,10 @@ In **Settings → Actions**, the left column lists every format:
 
 {% shot "Settings → Actions: the format list column with checkboxes and a row mid-drag being reordered, the custom-format editor column visible on the right." %}
 
+::: hint
+The number keys make favorites effortless: if Markdown Link sits in slot one, "copy this as Markdown" is your Copy shortcut followed by {% kbd "1" %} — no mouse involved.
+:::
+
 ## Writing your own formats
 
 Click **Add** in Settings → Actions to create a custom format. Custom formats work on file and folder pins. A format is a small template; whatever it produces lands on your clipboard.
@@ -148,6 +152,10 @@ return [filename]
 display notification [filename] with title "Pinza"
 return [full-path]
 ```
+
+::: help
+An AppleScript format that controls another app — like the Finder examples above — can trigger macOS's one-time consent dialog ("Pinza wants access to control Finder") the first time it runs. That's the normal [Automation permission](/help/getting-started/#automation), not a problem with your script.
+:::
 
 ## The tokens
 

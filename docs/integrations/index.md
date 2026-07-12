@@ -21,6 +21,10 @@ Integrations live under **Settings → Integrations**. Each one is optional, and
 | [YouTube](/help/integrations/youtube/) | Timestamped links, channel names and avatars | A per-browser switch |
 | [MCP server](/help/integrations/mcp/) (Pro) | Lets AI assistants search your pins, locally | Paste one config block |
 
+::: help
+The sign-in buttons use each service's own login page — Pinza never sees your password. The resulting access tokens, like all integration secrets, are stored in your macOS Keychain.
+:::
+
 ## The built-in ones
 
 A few smaller integrations need no account and no keys — just preferences in the same pane:

@@ -6,9 +6,13 @@ order: 8
 
 # MCP server
 
-MCP (Model Context Protocol) is the open standard AI apps use to talk to local tools. Pinza's MCP server lets your AI assistant — Claude, Codex, Gemini, or any MCP client — work with your pins: *"find that article about tidal energy I saved last week"* becomes a real query against your own history.
+Pinza's MCP server lets your AI assistant — Claude, Codex, Gemini, or any MCP client — work with your pins: *"find that article about tidal energy I saved last week"* becomes a real query against your own history.
 
 Everything runs over a local socket on your Mac. No pin data leaves the machine.
+
+::: help
+MCP stands for **Model Context Protocol** — the open standard AI apps use to talk to local tools. Any assistant that speaks MCP can use Pinza's tools once you've pasted the config snippet below; there's nothing vendor-specific about it.
+:::
 
 > The MCP server is a [Pinza Pro](/help/faq/#is-there-a-subscription) feature.
 

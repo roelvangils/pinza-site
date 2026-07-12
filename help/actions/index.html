@@ -763,6 +763,9 @@
 <li><strong>Uncheck</strong> a format to hide it from the menu.</li>
 </ul>
 <figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: Settings → Actions: the format list column with checkboxes and a row mid-drag being reordered, the custom-format editor column visible on the right.</p></figure>
+<aside class="callout callout-hint"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.5 1 1.3 1 2.1h5c0-.8.3-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body"><p class="callout-label">Hint</p>
+<p>The number keys make favorites effortless: if Markdown Link sits in slot one, &quot;copy this as Markdown&quot; is your Copy shortcut followed by <kbd class="cap">1</kbd> — no mouse involved.</p>
+</div></aside>
 <h2 id="writing-your-own-formats" tabindex="-1"><a class="heading-anchor" href="#writing-your-own-formats">Writing your own formats</a></h2>
 <p>Click <strong>Add</strong> in Settings → Actions to create a custom format. Custom formats work on file and folder pins. A format is a small template; whatever it produces lands on your clipboard.</p>
 <p>Give it a <strong>Name</strong> (that's the menu label), write the <strong>template</strong>, and pick how it runs:</p>
@@ -803,6 +806,9 @@ jq <span class="token builtin class-name">.</span> <span class="token punctuatio
 <pre class="language-applescript"><code class="language-applescript"><span class="token comment">-- Show a notification with the file name</span>
 display notification [filename] <span class="token keyword">with</span> title <span class="token string">"Pinza"</span>
 <span class="token keyword">return</span> [full<span class="token operator">-</span>path]</code></pre>
+<aside class="callout callout-help"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.8 2.1c-.8.5-1.3 1-1.3 1.9"/><circle cx="12" cy="16.8" r="0.6" fill="currentColor" stroke="none"/></svg></span><div class="callout-body"><p class="callout-label">Help</p>
+<p>An AppleScript format that controls another app — like the Finder examples above — can trigger macOS's one-time consent dialog (&quot;Pinza wants access to control Finder&quot;) the first time it runs. That's the normal <a href="/help/getting-started/#automation">Automation permission</a>, not a problem with your script.</p>
+</div></aside>
 <h2 id="the-tokens" tabindex="-1"><a class="heading-anchor" href="#the-tokens">The tokens</a></h2>
 <p>Write tokens in square brackets, exactly as shown. The editor has chips that insert them for you.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">

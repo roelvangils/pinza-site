@@ -11,6 +11,10 @@ The HUD is the small card that appears when you press your Copy shortcut. At fir
 
 Settings calls it the **Copy Confirmation**; you'll find its options under **Settings → General**.
 
+::: hint
+The two keys worth learning first: {% kbd "esc" %} dismisses the card immediately, {% kbd "space" %} holds it open for as long as you need.
+:::
+
 ## The collapsed card
 
 Right after a copy, the HUD shows:
@@ -67,6 +71,10 @@ While the HUD is on screen, Pinza borrows a handful of {% kbd "⌘" %} shortcuts
 | {% kbd "⌘" %}{% kbd "X" %} | Remove from history |
 | {% kbd "⌘" %}{% kbd "W" %} | Dismiss the card |
 | {% kbd "⌘" %}{% kbd "," %} | Open Pinza's Settings |
+
+::: help
+While the card is visible, these {% kbd "⌘" %} combinations go to Pinza instead of the app you're in. If a familiar shortcut seems to do nothing for a moment, that's why — everything returns to normal the instant the card disappears.
+:::
 
 Once you've engaged with the card (hovered it, or expanded it with the shortcut), a few plain keys work too:
 

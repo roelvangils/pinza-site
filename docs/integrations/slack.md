@@ -18,7 +18,9 @@ You get a `https://yourworkspace.slack.com/archives/…` link that anyone in the
 
 {% shot "Slack with a message selected (not the input field) and Pinza's HUD confirming the copied archives link.", "hud" %}
 
-> Slack gives Pinza very little to work with, so this is the most delicate of all app integrations. If your cursor is in a text field, Pinza backs off rather than guess — you may see a stray "L" typed instead, which {% kbd "⌘" %}{% kbd "Z" %} removes.
+::: help
+Slack gives Pinza very little to work with, so this is the most delicate of all app integrations. If your cursor is in a text field, Pinza backs off rather than guess — you may see a stray "L" typed instead, which {% kbd "⌘" %}{% kbd "Z" %} removes.
+:::
 
 ## Making links open in the Slack app
 

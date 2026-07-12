@@ -671,7 +671,12 @@
 <li><strong>Toggle it off and on.</strong> After a Pinza update, macOS sometimes keeps the checkbox on while silently revoking the grant. Toggle Pinza off and back on in that same list.</li>
 </ol>
 <figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: System Settings → Privacy & Security → Accessibility with Pinza's toggle — annotated “turn it off, then on again” — the fix for most dead-shortcut reports.</p></figure>
-3. **Check for a shortcut conflict.** Another app may claim the same combination. Open Pinza's **Settings → Shortcuts** — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.
+<aside class="callout callout-help"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.8 2.1c-.8.5-1.3 1-1.3 1.9"/><circle cx="12" cy="16.8" r="0.6" fill="currentColor" stroke="none"/></svg></span><div class="callout-body"><p class="callout-label">Help</p>
+<p>Toggle stuck? When the switch is on but Pinza still can't read anything, remove Pinza from the Accessibility list entirely (select it and click the <strong>−</strong> button), then relaunch Pinza and grant the permission fresh. macOS occasionally holds on to a stale entry, and this clears it.</p>
+</div></aside>
+<ol start="3">
+<li><strong>Check for a shortcut conflict.</strong> Another app may claim the same combination. Open Pinza's <strong>Settings → Shortcuts</strong> — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.</li>
+</ol>
 <figure class="shot-ph ph-dialog"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: Settings → Shortcuts with a recorder showing a conflict warning for a combination already taken by another app.</p></figure>
 <h2 id="%22pinza-wants-access-to-control-%E2%80%A6%22" tabindex="-1"><a class="heading-anchor" href="#%22pinza-wants-access-to-control-%E2%80%A6%22">&quot;Pinza wants access to control …&quot;</a></h2>
 <p>That dialog is macOS's <strong>Automation</strong> permission, and it's expected: the first time Pinza asks an app for its URL or file path, macOS checks with you, once per app. Click <strong>OK</strong>.</p>
@@ -732,6 +737,10 @@
 </table>
 </div><h2 id="the-hud-is-in-the-way" tabindex="-1"><a class="heading-anchor" href="#the-hud-is-in-the-way">The HUD is in the way</a></h2>
 <p>Drag it to another corner — it snaps to the nearest zone and remembers. Or change <strong>Settings → General → Copy Confirmation Position</strong>. The card can't go top-right; macOS notifications live there.</p>
+<h2 id="deleted-a-pin-by-accident" tabindex="-1"><a class="heading-anchor" href="#deleted-a-pin-by-accident">Deleted a pin by accident</a></h2>
+<aside class="callout callout-hint"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.5 1 1.3 1 2.1h5c0-.8.3-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body"><p class="callout-label">Hint</p>
+<p><kbd class="cap">⌘</kbd><kbd class="cap">Z</kbd> in the <a href="/help/launcher/">Launcher</a> undoes a deletion on the spot. With Pinza Pro, deleted pins also land in the Recently Deleted Bin, where they stay restorable for 30 days by default.</p>
+</div></aside>
 <h2 id="copying-stopped-working-after-a-macos-update" tabindex="-1"><a class="heading-anchor" href="#copying-stopped-working-after-a-macos-update">Copying stopped working after a macOS update</a></h2>
 <p>Same fix as after Pinza updates: <strong>System Settings → Privacy &amp; Security → Accessibility</strong>, toggle Pinza off and on.</p>
 <h2 id="license-issues" tabindex="-1"><a class="heading-anchor" href="#license-issues">License issues</a></h2>

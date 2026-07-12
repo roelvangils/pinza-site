@@ -20,6 +20,10 @@ Send someone a link that scrolls straight to the passage you mean.
 
 {% shot "split image: left, a paragraph selected on a news article; right, the recipient's browser opened by the link with the same passage scrolled into view and highlighted in yellow." %}
 
+::: help
+These are *text fragment* links — a web standard, not a Pinza trick. They open correctly in Safari, Chrome, Edge, and Firefox; a browser that doesn't support them simply opens the page at the top.
+:::
+
 ## Get back to page 37 of a PDF
 
 1. Open the PDF in Preview or [Skim](https://skim-app.sourceforge.io) and go to the page you care about.

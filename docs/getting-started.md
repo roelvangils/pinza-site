@@ -39,7 +39,9 @@ This is how Pinza knows which window you're looking at and reads its title or se
 
 {% shot "System Settings → Privacy & Security → Accessibility with Pinza in the app list and its toggle switched on — ideally with an arrow or highlight on the toggle." %}
 
-> Pinza reads only the frontmost window, only when you press the shortcut. Nothing runs in the background and nothing leaves your Mac. The [privacy policy](/privacy/) has the details.
+::: help
+Why does Pinza need this? Reading the frontmost window is how it knows what you're looking at. It reads only when you press the shortcut, nothing runs in the background, and nothing leaves your Mac. The [privacy policy](/privacy/) has the details.
+:::
 
 ### Automation
 
@@ -48,6 +50,10 @@ The first time Pinza asks a particular app for its URL or file path, macOS shows
 {% shot "the macOS Automation consent dialog — “Pinza” wants access to control “Safari” — with the OK button visible, so users know this dialog is expected and safe.", "dialog" %}
 
 If you click **Don't Allow** by accident, fix it under **System Settings → Privacy & Security → Automation** — see [Troubleshooting](/help/troubleshooting/).
+
+::: help
+If copying ever stops working after an update, macOS has probably revoked the Accessibility grant while leaving its checkbox on. Toggle Pinza off and on in that list — [Troubleshooting](/help/troubleshooting/) walks through it.
+:::
 
 ## Meet your two shortcuts
 
@@ -69,6 +75,10 @@ Onboarding suggests a shortcut when you set Pinza up. To check or change what yo
 {% shot "the HUD immediately after copying a Safari tab — collapsed card with the site's favicon, page title, and URL. Shot against a light desktop so the card pops.", "hud" %}
 
 4. Switch to Mail, Notes, or a chat and paste. The URL is there.
+
+::: hint
+The card dismisses itself after a few seconds. In a hurry? {% kbd "esc" %} dismisses it right away. Want it to stay? Press {% kbd "space" %} to hold it open.
+:::
 
 Now try the same in Finder: select a file and press the Copy shortcut. Pinza copies the file's path, ready to paste into a Terminal window, a save dialog, or a message. Every app copies whatever is most useful for that app — [Supported apps](/help/supported-apps/) lists what you get where.
 

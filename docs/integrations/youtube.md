@@ -47,6 +47,10 @@ Reading the player requires your browser's permission to run JavaScript on reque
 
 The first time Pinza can use the playhead in a browser, it asks before doing so — the switch per browser also lives in **Settings → Integrations → YouTube**.
 
+::: help
+What does that browser setting actually allow? It lets Pinza ask the page for the player's current position — a small script that runs only when you press your Copy shortcut on a YouTube tab. Pinza never runs JavaScript on other pages.
+:::
+
 ### Channel avatars
 
 Fetching channel avatars is a separate toggle in the same section, on by default. Turn it off if you'd rather Pinza made no network requests for artwork.

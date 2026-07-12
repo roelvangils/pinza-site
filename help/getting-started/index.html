@@ -687,13 +687,16 @@
 <li>Toggle <strong>Pinza</strong> on.</li>
 </ol>
 <figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: System Settings → Privacy & Security → Accessibility with Pinza in the app list and its toggle switched on — ideally with an arrow or highlight on the toggle.</p></figure>
-<blockquote>
-<p>Pinza reads only the frontmost window, only when you press the shortcut. Nothing runs in the background and nothing leaves your Mac. The <a href="/privacy/">privacy policy</a> has the details.</p>
-</blockquote>
+<aside class="callout callout-help"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.8 2.1c-.8.5-1.3 1-1.3 1.9"/><circle cx="12" cy="16.8" r="0.6" fill="currentColor" stroke="none"/></svg></span><div class="callout-body"><p class="callout-label">Help</p>
+<p>Why does Pinza need this? Reading the frontmost window is how it knows what you're looking at. It reads only when you press the shortcut, nothing runs in the background, and nothing leaves your Mac. The <a href="/privacy/">privacy policy</a> has the details.</p>
+</div></aside>
 <h3 id="automation" tabindex="-1"><a class="heading-anchor" href="#automation">Automation</a></h3>
 <p>The first time Pinza asks a particular app for its URL or file path, macOS shows a one-time dialog: <em>&quot;Pinza&quot; wants access to control &quot;Safari&quot;</em>. Click <strong>OK</strong>. You'll see this once per app, not every time.</p>
 <figure class="shot-ph ph-dialog"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: the macOS Automation consent dialog — “Pinza” wants access to control “Safari” — with the OK button visible, so users know this dialog is expected and safe.</p></figure>
 <p>If you click <strong>Don't Allow</strong> by accident, fix it under <strong>System Settings → Privacy &amp; Security → Automation</strong> — see <a href="/help/troubleshooting/">Troubleshooting</a>.</p>
+<aside class="callout callout-help"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.8 2.1c-.8.5-1.3 1-1.3 1.9"/><circle cx="12" cy="16.8" r="0.6" fill="currentColor" stroke="none"/></svg></span><div class="callout-body"><p class="callout-label">Help</p>
+<p>If copying ever stops working after an update, macOS has probably revoked the Accessibility grant while leaving its checkbox on. Toggle Pinza off and on in that list — <a href="/help/troubleshooting/">Troubleshooting</a> walks through it.</p>
+</div></aside>
 <h2 id="meet-your-two-shortcuts" tabindex="-1"><a class="heading-anchor" href="#meet-your-two-shortcuts">Meet your two shortcuts</a></h2>
 <p>Pinza has exactly two global shortcuts. They work everywhere, no matter which app is focused:</p>
 <ul>
@@ -712,6 +715,9 @@
 <ol start="4">
 <li>Switch to Mail, Notes, or a chat and paste. The URL is there.</li>
 </ol>
+<aside class="callout callout-hint"><span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.5 1 1.3 1 2.1h5c0-.8.3-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body"><p class="callout-label">Hint</p>
+<p>The card dismisses itself after a few seconds. In a hurry? <kbd class="cap">esc</kbd> dismisses it right away. Want it to stay? Press <kbd class="cap">space</kbd> to hold it open.</p>
+</div></aside>
 <p>Now try the same in Finder: select a file and press the Copy shortcut. Pinza copies the file's path, ready to paste into a Terminal window, a save dialog, or a message. Every app copies whatever is most useful for that app — <a href="/help/supported-apps/">Supported apps</a> lists what you get where.</p>
 <h2 id="what-just-happened" tabindex="-1"><a class="heading-anchor" href="#what-just-happened">What just happened</a></h2>
 <p>Each copy becomes a <strong>pin</strong>: an entry in Pinza's history with the title, the link or path, and a preview. Pins are how you get back to things later. They're stored on your Mac in an encrypted database, and the free version keeps your latest 25.</p>
