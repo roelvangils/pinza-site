@@ -1,0 +1,17 @@
+{% set nb = collections.help | neighbors(page.url) %}
+{% if nb.prev or nb.next %}
+<nav class="prev-next" aria-label="Sequential pages">
+  {% if nb.prev %}
+  <a rel="prev" href="{{ site.helpPrefix }}{{ nb.prev.url }}">
+    <span class="prev-next-label">Previous</span>
+    {{ nb.prev.data.navTitle or nb.prev.data.title }}
+  </a>
+  {% else %}<span></span>{% endif %}
+  {% if nb.next %}
+  <a rel="next" href="{{ site.helpPrefix }}{{ nb.next.url }}">
+    <span class="prev-next-label">Next</span>
+    {{ nb.next.data.navTitle or nb.next.data.title }}
+  </a>
+  {% endif %}
+</nav>
+{% endif %}

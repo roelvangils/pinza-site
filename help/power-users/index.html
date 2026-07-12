@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power users — Pinza Help</title>
+  <meta name="description" content="The plain-JSON config file at ~/.config/pinza/config.json, the pinza:// URL scheme, and how to use both.">
+  <link rel="canonical" href="https://pinza.app/help/power-users/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/help/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/" aria-current="page">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/" aria-current="page">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+      </nav>
+    </details>
+
+    <article class="help-article">
+      <h1>Power users</h1>
+<p>Two pieces of plumbing for people who like plumbing: a plain-text config file, and a URL scheme.</p>
+<h2 id="the-config-file" tabindex="-1"><a class="heading-anchor" href="#the-config-file">The config file</a></h2>
+<p>Every setting in Pinza is mirrored to a human-readable JSON file:</p>
+<pre class="language-text"><code class="language-text">~/.config/pinza/config.json</code></pre>
+<p>(If you set <code>$XDG_CONFIG_HOME</code>, Pinza honors it.)</p>
+<p>The file is a real two-way mirror, so you can keep it in your dotfiles or copy it to another Mac:</p>
+<ul>
+<li><strong>Changes in the app</strong> are written to the file within a second.</li>
+<li><strong>Your edits to the file</strong> are applied when Pinza launches. Editing while Pinza runs won't take effect until the next launch — the app is the source of truth while it's open.</li>
+<li>The file can be <strong>sparse</strong>: any key you leave out keeps its in-app value. An invalid value for one key is skipped and logged; the rest still applies.</li>
+<li>A file that doesn't parse at all is never applied — Pinza sets it aside as <code>config.json.invalid</code> and writes a fresh one, so a stray comma can't eat your settings.</li>
+</ul>
+<h3 id="the-shape" tabindex="-1"><a class="heading-anchor" href="#the-shape">The shape</a></h3>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"general"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"launchAtLogin"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"appearance"</span><span class="token operator">:</span> <span class="token string">"auto"</span><span class="token punctuation">,</span>
+    <span class="token property">"menuBarIconStyle"</span><span class="token operator">:</span> <span class="token string">"paperclip"</span><span class="token punctuation">,</span>
+    <span class="token property">"windowStyle"</span><span class="token operator">:</span> <span class="token string">"launcher"</span><span class="token punctuation">,</span>
+    <span class="token property">"checkForUpdatesAutomatically"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"shortcuts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"copyDocumentPath"</span><span class="token operator">:</span> <span class="token string">"ctrl+opt+c"</span><span class="token punctuation">,</span>
+    <span class="token property">"openRecents"</span><span class="token operator">:</span> <span class="token string">"ctrl+opt+p"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"hud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"position"</span><span class="token operator">:</span> <span class="token string">"bottomLeft"</span><span class="token punctuation">,</span>
+    <span class="token property">"duration"</span><span class="token operator">:</span> <span class="token string">"fiveSeconds"</span><span class="token punctuation">,</span>
+    <span class="token property">"dismissIndicator"</span><span class="token operator">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
+    <span class="token property">"sound"</span><span class="token operator">:</span> <span class="token string">"pop"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"recents"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"displayCount"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token property">"fetchFavicons"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"fetchRichPreviews"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"hideSiteNameInTitles"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"actions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"copyFormats"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"integrations"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"preferredTerminal"</span><span class="token operator">:</span> <span class="token string">"com.googlecode.iterm2"</span><span class="token punctuation">,</span>
+    <span class="token property">"raindrop"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"showInHUD"</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"reminders"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"morningTime"</span><span class="token operator">:</span> <span class="token string">"09:00"</span><span class="token punctuation">,</span> <span class="token property">"eveningTime"</span><span class="token operator">:</span> <span class="token string">"19:00"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"detachedCards"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"floatAboveApps"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"restoreOnLaunch"</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"mcp"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"enabled"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"tools"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"search"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"list"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"get"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"reveal"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"copy"</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"accessibility"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"reduceMotion"</span><span class="token operator">:</span> <span class="token string">"followSystem"</span><span class="token punctuation">,</span> <span class="token property">"highContrast"</span><span class="token operator">:</span> <span class="token string">"followSystem"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"privacy"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"crashReporting"</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"bin"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token property">"retentionDays"</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token property">"requireTouchID"</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>A few conventions:</p>
+<ul>
+<li><strong>Shortcuts</strong> are strings like <code>&quot;ctrl+opt+c&quot;</code> or <code>&quot;shift+cmd+p&quot;</code>. An explicit <code>null</code> means the shortcut is cleared.</li>
+<li><strong>Reminder anchors</strong> are 24-hour <code>&quot;HH:MM&quot;</code> strings.</li>
+<li><code>actions.copyFormats</code> holds your <a href="/help/actions/">Copy as… configuration</a> — order, visibility, and your custom formats — which makes custom formats portable between Macs.</li>
+<li>Secrets are <strong>not</strong> in this file. The Mistral API key and all account sign-ins live in the macOS Keychain.</li>
+</ul>
+<h2 id="the-pinza%3A%2F%2F-url-scheme" tabindex="-1"><a class="heading-anchor" href="#the-pinza%3A%2F%2F-url-scheme">The pinza:// URL scheme</a></h2>
+<p>Every file or deep-link pin can mint a short permalink:</p>
+<pre class="language-text"><code class="language-text">pinza://3F7KQ</code></pre>
+<p>Get one from <strong>Copy as… → Pinza Link</strong> on the pin. Minting a permalink also pins the entry, so the link keeps working even as history moves on. (Web URLs don't offer this — they're already portable links.)</p>
+<p>Paste these into your notes, task manager, or scripts. Opening one:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
+<table><thead>
+<tr>
+<th>Link</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pinza://3F7KQ</code></td>
+<td>Files are revealed in Finder; links and deep links open</td>
+</tr>
+<tr>
+<td><code>pinza://3F7KQ?action=open</code></td>
+<td>The target opens (files too)</td>
+</tr>
+<tr>
+<td><code>pinza://3F7KQ?action=copy</code></td>
+<td>The pin's value is copied again</td>
+</tr>
+</tbody>
+</table>
+</div><p>Notes:</p>
+<ul>
+<li><code>pnz://</code> works identically to <code>pinza://</code>, for the brevity-inclined.</li>
+<li>IDs are five characters, case-insensitive, and never use the easily-confused I, L, O, or U.</li>
+<li>Permalinks are local to the Mac that minted them — they're pointers into <em>your</em> history, not sharable URLs.</li>
+</ul>
+<p>From a script:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">open</span> <span class="token string">"pinza://3F7KQ?action=copy"</span></code></pre>
+
+    </article>
+
+    
+
+<nav class="prev-next" aria-label="Sequential pages">
+  
+  <a rel="prev" href="/help/supported-apps/">
+    <span class="prev-next-label">Previous</span>
+    Supported apps
+  </a>
+  
+  
+  <a rel="next" href="/help/troubleshooting/">
+    <span class="prev-next-label">Next</span>
+    Troubleshooting
+  </a>
+  
+</nav>
+
+
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configuring Actions — Pinza Help</title>
+  <meta name="description" content="Customize the Copy as… menu — reorder the built-in formats, hide the ones you never use, and write your own with templates, shell scripts, or AppleScript.">
+  <link rel="canonical" href="https://pinza.app/help/actions/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/help/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/" aria-current="page">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/" aria-current="page">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+      </nav>
+    </details>
+
+    <article class="help-article">
+      <h1>Configuring Actions</h1>
+<p><strong>Settings → Actions</strong> is where you shape the <strong>Copy as…</strong> menu — the list of alternate formats the <a href="/help/hud/">HUD</a> offers after a copy. You can reorder the built-in formats, hide the ones you never use, and write your own.</p>
+<h2 id="the-copy-as%E2%80%A6-menu" tabindex="-1"><a class="heading-anchor" href="#the-copy-as%E2%80%A6-menu">The Copy as… menu</a></h2>
+<p>Copy something, hover the HUD, click <strong>Copy as…</strong> (or press <kbd class="cap">⌘</kbd><kbd class="cap">C</kbd> while the HUD is up). Every entry in the menu is one format. The first nine can be fired with the number keys <kbd class="cap">1</kbd>–<kbd class="cap">9</kbd>.</p>
+<h3 id="built-in-formats-for-files-and-folders" tabindex="-1"><a class="heading-anchor" href="#built-in-formats-for-files-and-folders">Built-in formats for files and folders</a></h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
+<table><thead>
+<tr>
+<th>Format</th>
+<th>Example output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Git Path</td>
+<td><code>src/image.png</code> — relative to the repository root; only appears inside Git repositories</td>
+</tr>
+<tr>
+<td>Absolute Path</td>
+<td><code>/Users/you/Documents/image.png</code></td>
+</tr>
+<tr>
+<td>Tilde Path</td>
+<td><code>~/Documents/image.png</code></td>
+</tr>
+<tr>
+<td>Tilde Path (Escaped)</td>
+<td><code>&quot;~/Documents/image.png&quot;</code> — quoted for the shell</td>
+</tr>
+<tr>
+<td>Filename</td>
+<td><code>image.png</code></td>
+</tr>
+<tr>
+<td>Enclosing Folder</td>
+<td><code>/Users/you/Documents</code></td>
+</tr>
+<tr>
+<td>AppleScript Path</td>
+<td><code>Macintosh HD:Users:you:image.png</code></td>
+</tr>
+<tr>
+<td>File URL</td>
+<td><code>file:///Users/you/Documents/image.png</code></td>
+</tr>
+<tr>
+<td>VS Code URL</td>
+<td><code>vscode://file/Users/you/image.png</code></td>
+</tr>
+<tr>
+<td>SCP Path</td>
+<td><code>MacBook:/Users/you/image.png</code> — for scp and rsync</td>
+</tr>
+<tr>
+<td>Markdown Link</td>
+<td><code>[image.png](file:///Users/you/image.png)</code></td>
+</tr>
+<tr>
+<td>HTML Link</td>
+<td><code>&lt;a href=&quot;file:///Users/you/image.png&quot;&gt;image.png&lt;/a&gt;</code></td>
+</tr>
+<tr>
+<td>Absolute Path (ROT13)</td>
+<td><code>/Hfref/lbh/vzntr.cat</code></td>
+</tr>
+<tr>
+<td>File hash (SHA-256)</td>
+<td>a content checksum — files under 50 MB only</td>
+</tr>
+<tr>
+<td>Base64 Data URI</td>
+<td><code>data:image/png;base64,iVBORw…</code> — under 50 MB only</td>
+</tr>
+<tr>
+<td>Base64 data</td>
+<td>the file's bytes as Base64 — under 50 MB only</td>
+</tr>
+<tr>
+<td>Pinza Link</td>
+<td><code>pinza://3F7KQ</code> — a permalink back to this pin; see <a href="/help/power-users/">Power users</a></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="formats-for-web-links" tabindex="-1"><a class="heading-anchor" href="#formats-for-web-links">Formats for web links</a></h3>
+<p>Any copied URL offers <strong>Markdown Link</strong> (<code>[Page title](https://…)</code>) and <strong>HTML Link</strong>.</p>
+<h3 id="context-aware-extras" tabindex="-1"><a class="heading-anchor" href="#context-aware-extras">Context-aware extras</a></h3>
+<p>Some pins bring their own formats along:</p>
+<ul>
+<li><strong>GitHub URLs</strong> — the repo slug, HTTPS and SSH clone URLs, a ready-made <code>gh repo clone</code> command, and raw-file URLs.</li>
+<li><strong>PDFs</strong> — plain-text extraction, and Markdown via <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>.</li>
+<li><strong>Google Drive and Notion</strong> — Markdown, CSV, and download options once <a href="/help/integrations/">connected</a>.</li>
+<li><strong>Music</strong> — links for a dozen streaming platforms via song.link.</li>
+</ul>
+<h2 id="reordering-and-hiding-formats" tabindex="-1"><a class="heading-anchor" href="#reordering-and-hiding-formats">Reordering and hiding formats</a></h2>
+<p>In <strong>Settings → Actions</strong>, the left column lists every format:</p>
+<ul>
+<li><strong>Drag</strong> to reorder. The order here is the order in the menu — put your favorites in the first nine slots so they get number keys.</li>
+<li><strong>Uncheck</strong> a format to hide it from the menu.</li>
+</ul>
+<h2 id="writing-your-own-formats" tabindex="-1"><a class="heading-anchor" href="#writing-your-own-formats">Writing your own formats</a></h2>
+<p>Click <strong>Add</strong> in Settings → Actions to create a custom format. Custom formats work on file and folder pins. A format is a small template; whatever it produces lands on your clipboard.</p>
+<p>Give it a <strong>Name</strong> (that's the menu label), write the <strong>template</strong>, and pick how it runs:</p>
+<h3 id="1.-text-templates" tabindex="-1"><a class="heading-anchor" href="#1.-text-templates">1. Text templates</a></h3>
+<p>The template is copied as-is, with tokens replaced. Instant, and completely safe.</p>
+<p>Example — an HTML image tag for the copied file:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[file-url]<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[basename]<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p>Example — a file reference for a bug report:</p>
+<pre class="language-text"><code class="language-text">[filename] (in [folder])</code></pre>
+<h3 id="2.-shell-scripts" tabindex="-1"><a class="heading-anchor" href="#2.-shell-scripts">2. Shell scripts</a></h3>
+<p>The template runs in <code>zsh</code> and <strong>its output is copied</strong>. Homebrew's <code>/opt/homebrew/bin</code> and <code>/usr/local/bin</code> are on the PATH, and the script starts in the file's own folder.</p>
+<p>Some ideas — these are the same examples behind the <strong>Some inspiration</strong> link in the editor:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Copy the file's contents</span>
+<span class="token function">cat</span> <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Count the lines in the file</span>
+<span class="token function">wc</span> <span class="token parameter variable">-l</span> <span class="token operator">&lt;</span> <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># The file's size, human-readable</span>
+<span class="token function">du</span> <span class="token parameter variable">-sh</span> <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-f1</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Pixel dimensions of an image</span>
+sips <span class="token parameter variable">-g</span> pixelWidth <span class="token parameter variable">-g</span> pixelHeight <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># The last Git commit that touched this file</span>
+<span class="token function">git</span> <span class="token parameter variable">-C</span> <span class="token punctuation">[</span>folder<span class="token punctuation">]</span> log <span class="token parameter variable">-1</span> <span class="token parameter variable">--format</span><span class="token operator">=</span><span class="token string">"%h %s"</span> -- <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Extract plain text from an RTF or Word document</span>
+textutil <span class="token parameter variable">-convert</span> txt <span class="token parameter variable">-stdout</span> <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Pretty-print JSON (needs jq, via Homebrew)</span>
+jq <span class="token builtin class-name">.</span> <span class="token punctuation">[</span>full-path<span class="token punctuation">]</span></code></pre>
+<h3 id="3.-applescript" tabindex="-1"><a class="heading-anchor" href="#3.-applescript">3. AppleScript</a></h3>
+<p>The template runs through <code>osascript</code> and the <strong>result</strong> is copied. AppleScript formats can also have side effects — reveal the file, show a notification — as long as they return something for the clipboard.</p>
+<pre class="language-applescript"><code class="language-applescript"><span class="token comment">-- Copy the file's Finder comment</span>
+<span class="token keyword">tell</span> <span class="token class-name">application</span> <span class="token string">"Finder"</span> <span class="token keyword">to</span> <span class="token keyword">return</span> comment <span class="token keyword">of</span> <span class="token punctuation">(</span><span class="token class-name">POSIX file</span> [full<span class="token operator">-</span>path] <span class="token operator">as</span> <span class="token class-name">alias</span><span class="token punctuation">)</span></code></pre>
+<pre class="language-applescript"><code class="language-applescript"><span class="token comment">-- Reveal the file in Finder</span>
+<span class="token keyword">tell</span> <span class="token class-name">application</span> <span class="token string">"Finder"</span>
+	reveal <span class="token punctuation">(</span><span class="token class-name">POSIX file</span> [full<span class="token operator">-</span>path]<span class="token punctuation">)</span>
+	activate
+<span class="token keyword">end</span> <span class="token keyword">tell</span>
+<span class="token keyword">return</span> [filename]</code></pre>
+<pre class="language-applescript"><code class="language-applescript"><span class="token comment">-- Show a notification with the file name</span>
+display notification [filename] <span class="token keyword">with</span> title <span class="token string">"Pinza"</span>
+<span class="token keyword">return</span> [full<span class="token operator">-</span>path]</code></pre>
+<h2 id="the-tokens" tabindex="-1"><a class="heading-anchor" href="#the-tokens">The tokens</a></h2>
+<p>Write tokens in square brackets, exactly as shown. The editor has chips that insert them for you.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
+<table><thead>
+<tr>
+<th>Token</th>
+<th>Value for <code>/Users/you/Documents/report.pdf</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[full-path]</code></td>
+<td><code>/Users/you/Documents/report.pdf</code></td>
+</tr>
+<tr>
+<td><code>[folder]</code></td>
+<td><code>/Users/you/Documents</code></td>
+</tr>
+<tr>
+<td><code>[filename]</code></td>
+<td><code>report.pdf</code></td>
+</tr>
+<tr>
+<td><code>[basename]</code></td>
+<td><code>report</code></td>
+</tr>
+<tr>
+<td><code>[extension]</code></td>
+<td><code>pdf</code></td>
+</tr>
+<tr>
+<td><code>[file-url]</code></td>
+<td><code>file:///Users/you/Documents/report.pdf</code></td>
+</tr>
+</tbody>
+</table>
+</div><p>In shell and AppleScript templates you don't need to quote tokens. Pinza hands the values to your script through environment variables (<code>PINZA_FULL_PATH</code> and friends), so file names with spaces, quotes, or other odd characters can't break — or abuse — your script.</p>
+<h2 id="previewing" tabindex="-1"><a class="heading-anchor" href="#previewing">Previewing</a></h2>
+<p>The editor's <strong>Preview</strong> runs your template against a sample file and shows exactly what would land on the clipboard. Copy a file in Finder and the preview adopts it as the sample.</p>
+<h2 id="guardrails" tabindex="-1"><a class="heading-anchor" href="#guardrails">Guardrails</a></h2>
+<p>A few limits keep custom formats safe and snappy:</p>
+<ul>
+<li><strong>Destructive commands are refused.</strong> Templates containing <code>rm</code>, <code>sudo</code>, <code>dd</code>, <code>kill</code>, <code>shutdown</code>, and similar won't save and won't run.</li>
+<li><strong>Content-reading templates know their limits.</strong> A format that reads the file's contents (<code>cat</code>, <code>head</code>, <code>grep</code>, …) is greyed out in the menu for folders, binary files, and files over 10 MB.</li>
+<li>Scripts get <strong>10 seconds</strong> to finish and may produce up to <strong>1 MB</strong> of output.</li>
+</ul>
+<h2 id="where-custom-formats-live" tabindex="-1"><a class="heading-anchor" href="#where-custom-formats-live">Where custom formats live</a></h2>
+<p>Your formats are part of Pinza's settings and are mirrored to the plain-JSON config file at <code>~/.config/pinza/config.json</code> under <code>actions.copyFormats</code> — handy for versioning them in dotfiles or copying them to another Mac. See <a href="/help/power-users/">Power users</a>.</p>
+
+    </article>
+
+    
+
+<nav class="prev-next" aria-label="Sequential pages">
+  
+  <a rel="prev" href="/help/launcher/">
+    <span class="prev-next-label">Previous</span>
+    The Launcher
+  </a>
+  
+  
+  <a rel="next" href="/help/integrations/">
+    <span class="prev-next-label">Next</span>
+    Overview
+  </a>
+  
+</nav>
+
+
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>

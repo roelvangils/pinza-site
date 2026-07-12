@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCP server — Pinza Help</title>
+  <meta name="description" content="Let Claude or any MCP-capable AI assistant search, read, and reveal your pins — entirely on your Mac. A Pinza Pro feature.">
+  <link rel="canonical" href="https://pinza.app/help/integrations/mcp/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/help/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/" aria-current="page">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/" aria-current="page">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+      </nav>
+    </details>
+
+    <article class="help-article">
+      <h1>MCP server</h1>
+<p>MCP (Model Context Protocol) is the open standard AI apps use to talk to local tools. Pinza's MCP server lets your AI assistant — Claude, Codex, Gemini, or any MCP client — work with your pins: <em>&quot;find that article about tidal energy I saved last week&quot;</em> becomes a real query against your own history.</p>
+<p>Everything runs over a local socket on your Mac. No pin data leaves the machine.</p>
+<blockquote>
+<p>The MCP server is a <a href="/help/faq/#is-there-a-subscription">Pinza Pro</a> feature.</p>
+</blockquote>
+<h2 id="setup" tabindex="-1"><a class="heading-anchor" href="#setup">Setup</a></h2>
+<ol>
+<li>Open <strong>Settings → Integrations → MCP Server</strong> and turn the server on.</li>
+<li>Click <strong>Copy Claude Desktop config</strong>. Pinza puts a ready-made snippet on your clipboard:</li>
+</ol>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"mcpServers"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"pinza"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"/Users/you/Library/Application Support/Pinza/pinza-mcp-bridge"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<ol start="3">
+<li>Paste it into your client's MCP configuration — for Claude Desktop that's <code>~/Library/Application Support/Claude/claude_desktop_config.json</code> — and restart the client.</li>
+</ol>
+<p>Other MCP clients work the same way: point them at the bridge command from the snippet.</p>
+<h2 id="the-five-tools" tabindex="-1"><a class="heading-anchor" href="#the-five-tools">The five tools</a></h2>
+<p>Each tool has its own toggle in Settings, so you decide exactly what an assistant may do:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
+<table><thead>
+<tr>
+<th>Tool</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>search_pins</code></td>
+<td>Full-text search across your pins</td>
+<td>On</td>
+</tr>
+<tr>
+<td><code>list_pins</code></td>
+<td>List pins, filtered by app, site, or date</td>
+<td>On</td>
+</tr>
+<tr>
+<td><code>get_pin</code></td>
+<td>One pin's details, including its highlights</td>
+<td>On</td>
+</tr>
+<tr>
+<td><code>reveal_pin</code></td>
+<td>Pop a pin up on screen as a floating Card</td>
+<td>On</td>
+</tr>
+<tr>
+<td><code>copy_pin</code></td>
+<td>Put a pin back on your clipboard</td>
+<td><strong>Off</strong></td>
+</tr>
+</tbody>
+</table>
+</div><p><code>copy_pin</code> is the only tool that writes — it can overwrite whatever is on your clipboard — so it ships turned off. Enable it deliberately if you want it.</p>
+
+    </article>
+
+    
+
+<nav class="prev-next" aria-label="Sequential pages">
+  
+  <a rel="prev" href="/help/integrations/youtube/">
+    <span class="prev-next-label">Previous</span>
+    YouTube
+  </a>
+  
+  
+  <a rel="next" href="/help/settings/">
+    <span class="prev-next-label">Next</span>
+    Settings
+  </a>
+  
+</nav>
+
+
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>

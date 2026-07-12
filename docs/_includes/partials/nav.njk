@@ -1,0 +1,21 @@
+{% macro helpNav(collection, sections, pageUrl, helpPrefix) %}
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="{{ helpPrefix }}/"{% if pageUrl == "/" %} aria-current="page"{% endif %}>Help home</a>
+  </li>
+  {% for sectionKey, sectionMeta in sections %}
+  <li>
+    <span class="help-nav-label" aria-hidden="true">{{ sectionMeta.label }}</span>
+    <ul aria-label="{{ sectionMeta.label }}">
+      {% for entry in collection %}
+        {% if entry.data.section == sectionKey %}
+        <li{% if "/integrations/" in entry.url and entry.url != "/integrations/" %} class="help-nav-child"{% endif %}>
+          <a href="{{ helpPrefix }}{{ entry.url }}"{% if entry.url == pageUrl %} aria-current="page"{% endif %}>{{ entry.data.navTitle or entry.data.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

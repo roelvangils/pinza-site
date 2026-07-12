@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" %}Pinza Help{% else %}{{ title }} — Pinza Help{% endif %}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ site.origin }}{{ site.helpPrefix }}{{ page.url }}">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="{{ site.helpPrefix }}/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+{% import "partials/nav.njk" as navMacro %}
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    {{ navMacro.helpNav(collections.help, sections, page.url, site.helpPrefix) }}
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        {{ navMacro.helpNav(collections.help, sections, page.url, site.helpPrefix) }}
+      </nav>
+    </details>
+
+    <article class="help-article">
+      {{ content | safe }}
+    </article>
+
+    {% include "partials/prev-next.njk" %}
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>

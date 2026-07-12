@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting — Pinza Help</title>
+  <meta name="description" content="The shortcut does nothing, an app copies the wrong thing, permission dialogs — the fixes for Pinza&#39;s common problems.">
+  <link rel="canonical" href="https://pinza.app/help/troubleshooting/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/help/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/" aria-current="page">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/" aria-current="page">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+      </nav>
+    </details>
+
+    <article class="help-article">
+      <h1>Troubleshooting</h1>
+<p>Most Pinza problems come down to one of two macOS permissions. Start there.</p>
+<h2 id="the-shortcut-does-nothing" tabindex="-1"><a class="heading-anchor" href="#the-shortcut-does-nothing">The shortcut does nothing</a></h2>
+<p>Work down this list:</p>
+<ol>
+<li><strong>Check the Accessibility permission.</strong> Open <strong>System Settings → Privacy &amp; Security → Accessibility</strong> and make sure Pinza is toggled on. Pinza can check for you: <strong>Settings → About → Check Accessibility Permissions…</strong></li>
+<li><strong>Toggle it off and on.</strong> After a Pinza update, macOS sometimes keeps the checkbox on while silently revoking the grant. Toggle Pinza off and back on in that same list.</li>
+<li><strong>Check for a shortcut conflict.</strong> Another app may claim the same combination. Open Pinza's <strong>Settings → Shortcuts</strong> — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.</li>
+</ol>
+<h2 id="%22pinza-wants-access-to-control-%E2%80%A6%22" tabindex="-1"><a class="heading-anchor" href="#%22pinza-wants-access-to-control-%E2%80%A6%22">&quot;Pinza wants access to control …&quot;</a></h2>
+<p>That dialog is macOS's <strong>Automation</strong> permission, and it's expected: the first time Pinza asks an app for its URL or file path, macOS checks with you, once per app. Click <strong>OK</strong>.</p>
+<p>Clicked <strong>Don't Allow</strong> by accident? Go to <strong>System Settings → Privacy &amp; Security → Automation</strong>, find Pinza, and toggle the app in question back on. If things are thoroughly tangled, <strong>Settings → About → Reset All Automation Permissions…</strong> starts the dialogs over from scratch.</p>
+<h2 id="an-app-copies-the-wrong-thing-%E2%80%94-or-nothing" tabindex="-1"><a class="heading-anchor" href="#an-app-copies-the-wrong-thing-%E2%80%94-or-nothing">An app copies the wrong thing — or nothing</a></h2>
+<ul>
+<li>Check the app's entry in <a href="/help/supported-apps/">Supported apps</a>; several have small requirements (VS Code needs a window-title setting, Slack needs the message clicked, Apple Music only handles catalog tracks).</li>
+<li>If an app has no dedicated support, Pinza falls back to asking for the app's open document, which not every app answers.</li>
+<li>Still wrong? Email <a href="mailto:hello@pinza.app">hello@pinza.app</a> with the app's name, what you copied, and what you expected. App support is the product; these reports directly shape releases.</li>
+</ul>
+<h3 id="app-specific-notes" tabindex="-1"><a class="heading-anchor" href="#app-specific-notes">App-specific notes</a></h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
+<table><thead>
+<tr>
+<th>Symptom</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VS Code / Cursor / Windsurf yields nothing</td>
+<td>Add <code>${activeEditorLong}</code> to the editor's <code>window.title</code> setting so the full file path is visible to Pinza</td>
+</tr>
+<tr>
+<td>A JetBrains link doesn't navigate</td>
+<td>The links only resolve while that project is open in the IDE</td>
+</tr>
+<tr>
+<td>Slack types a stray &quot;L&quot;</td>
+<td>Your cursor was in the message field; press <kbd class="cap">⌘</kbd><kbd class="cap">Z</kbd> in Slack and click the message first next time</td>
+</tr>
+<tr>
+<td>An Obsidian link misfires</td>
+<td>Vault or note names containing <code>-</code> confuse the window-title parsing</td>
+</tr>
+<tr>
+<td>Apple Notes gives no link</td>
+<td>Only notes shared via iCloud have linkable URLs</td>
+</tr>
+<tr>
+<td>Podcasts gives no link</td>
+<td>Pinza links the playing episode; play something first</td>
+</tr>
+<tr>
+<td>Apple Music gives nothing</td>
+<td>The selected track is a local upload, not Apple Music catalog content</td>
+</tr>
+<tr>
+<td>A Preview PDF link opens on the wrong page</td>
+<td>Preview ignores its own page fragment when reopening; the links work in browsers, and <a href="https://skim-app.sourceforge.io">Skim</a> round-trips them properly</td>
+</tr>
+<tr>
+<td>A YouTube link has no timestamp</td>
+<td>The playhead needs <a href="/help/integrations/youtube/">a per-browser switch</a>, and the video must be paused</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="the-hud-is-in-the-way" tabindex="-1"><a class="heading-anchor" href="#the-hud-is-in-the-way">The HUD is in the way</a></h2>
+<p>Drag it to another corner — it snaps to the nearest zone and remembers. Or change <strong>Settings → General → Copy Confirmation Position</strong>. The card can't go top-right; macOS notifications live there.</p>
+<h2 id="copying-stopped-working-after-a-macos-update" tabindex="-1"><a class="heading-anchor" href="#copying-stopped-working-after-a-macos-update">Copying stopped working after a macOS update</a></h2>
+<p>Same fix as after Pinza updates: <strong>System Settings → Privacy &amp; Security → Accessibility</strong>, toggle Pinza off and on.</p>
+<h2 id="license-issues" tabindex="-1"><a class="heading-anchor" href="#license-issues">License issues</a></h2>
+<ul>
+<li><strong>Lost your key?</strong> It's in the email Gumroad sent after purchase. Recover it through <a href="https://gumroad.com/library">Gumroad's library</a> or email us.</li>
+<li><strong>&quot;Seat limit reached&quot;?</strong> One key covers five Macs. Deactivate an old Mac from <strong>Settings → Pinza Pro</strong> on that machine — or email us and we'll free the seat.</li>
+</ul>
+<h2 id="updates" tabindex="-1"><a class="heading-anchor" href="#updates">Updates</a></h2>
+<p>Pinza updates itself via Sparkle: signed, verified, and checked on startup if you allow it. <strong>Settings → About → Check Now…</strong> forces a check. Release notes live on the <a href="https://github.com/roelvangils/pinza-updates/releases">releases page</a>.</p>
+<h2 id="when-you-report-a-bug" tabindex="-1"><a class="heading-anchor" href="#when-you-report-a-bug">When you report a bug</a></h2>
+<p>Email <a href="mailto:hello@pinza.app">hello@pinza.app</a> with what you did, what you expected, and what happened instead. If the app crashed, consider opting in to anonymous crash reports (<strong>Settings → About → Diagnostics</strong>, off by default) so the next crash reaches us automatically.</p>
+
+    </article>
+
+    
+
+<nav class="prev-next" aria-label="Sequential pages">
+  
+  <a rel="prev" href="/help/power-users/">
+    <span class="prev-next-label">Previous</span>
+    Power users
+  </a>
+  
+  
+  <a rel="next" href="/help/faq/">
+    <span class="prev-next-label">Next</span>
+    FAQ
+  </a>
+  
+</nav>
+
+
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>

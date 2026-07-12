@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slack — Pinza Help</title>
+  <meta name="description" content="Copy links to Slack messages, and teach Pinza your workspace&#39;s Team ID so links open in the Slack app instead of the browser.">
+  <link rel="canonical" href="https://pinza.app/help/integrations/slack/">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/help.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/icon-256.png" alt="" width="40" height="40">
+    <a class="brand" href="/">Pinza</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="/help/" aria-current="page">Help</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </nav>
+    <a class="btn-header" href="/download/">Download</a>
+  </div>
+</header>
+
+
+
+<div class="wrap help-layout">
+  <nav class="help-nav" aria-label="Help contents">
+    
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/" aria-current="page">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+  </nav>
+
+  <main id="main">
+    <details class="help-nav-mobile">
+      <summary>Help contents</summary>
+      <nav aria-label="Help contents">
+        
+<ul class="help-nav-groups">
+  <li class="help-nav-home">
+    <a href="/help/">Help home</a>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Start here</span>
+    <ul aria-label="Start here">
+      
+        
+        <li>
+          <a href="/help/getting-started/">Getting started</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/use-cases/">Use cases</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Using Pinza</span>
+    <ul aria-label="Using Pinza">
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/hud/">The HUD</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/launcher/">The Launcher</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/actions/">Actions</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Integrations</span>
+    <ul aria-label="Integrations">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/integrations/">Overview</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mistral-ocr/">Mistral OCR</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/google-drive/">Google Drive</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/notion/">Notion</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/raindrop/">Raindrop.io</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/slack/" aria-current="page">Slack</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/youtube/">YouTube</a>
+        </li>
+        
+      
+        
+        <li class="help-nav-child">
+          <a href="/help/integrations/mcp/">MCP server</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Reference</span>
+    <ul aria-label="Reference">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/settings/">Settings</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/supported-apps/">Supported apps</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/power-users/">Power users</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </li>
+  
+  <li>
+    <span class="help-nav-label" aria-hidden="true">Support</span>
+    <ul aria-label="Support">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/help/troubleshooting/">Troubleshooting</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/faq/">FAQ</a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="/help/whats-coming/">What&#39;s coming</a>
+        </li>
+        
+      
+    </ul>
+  </li>
+  
+</ul>
+
+      </nav>
+    </details>
+
+    <article class="help-article">
+      <h1>Slack</h1>
+<p>Select a message in Slack and press your Copy shortcut: Pinza copies a link straight to that message, ready to paste into a ticket, a to-do, or another conversation.</p>
+<h2 id="copying-a-message-link" tabindex="-1"><a class="heading-anchor" href="#copying-a-message-link">Copying a message link</a></h2>
+<ol>
+<li>In Slack, <strong>click the message</strong> first so it's selected.</li>
+<li>Make sure your cursor is <strong>not</strong> in the message input field.</li>
+<li>Press your Copy shortcut.</li>
+</ol>
+<p>You get a <code>https://yourworkspace.slack.com/archives/…</code> link that anyone in the workspace can open.</p>
+<blockquote>
+<p>Slack gives Pinza very little to work with, so this is the most delicate of all app integrations. If your cursor is in a text field, Pinza backs off rather than guess — you may see a stray &quot;L&quot; typed instead, which <kbd class="cap">⌘</kbd><kbd class="cap">Z</kbd> removes.</p>
+</blockquote>
+<h2 id="making-links-open-in-the-slack-app" tabindex="-1"><a class="heading-anchor" href="#making-links-open-in-the-slack-app">Making links open in the Slack app</a></h2>
+<p>By default, message links open in the browser. If Pinza knows your workspace's <strong>Team ID</strong>, it can copy <code>slack://</code> deep links that open in the Slack app directly.</p>
+<p>Pinza discovers Team IDs on its own where it can — from links in your history and from your clipboard. To add one manually:</p>
+<ol>
+<li>Open <strong>Settings → Integrations → Slack Workspaces</strong> and click the help button.</li>
+<li>Open Slack <strong>in your browser</strong> (not the app) and sign in to the workspace.</li>
+<li>Look at the address bar. The URL looks like <code>https://app.slack.com/client/TXXXXXXXX/…</code> — the part starting with <code>T</code> is the Team ID.</li>
+<li>Copy the whole URL to your clipboard and return to Pinza. It picks the ID out for you.</li>
+</ol>
+
+    </article>
+
+    
+
+<nav class="prev-next" aria-label="Sequential pages">
+  
+  <a rel="prev" href="/help/integrations/raindrop/">
+    <span class="prev-next-label">Previous</span>
+    Raindrop.io
+  </a>
+  
+  
+  <a rel="next" href="/help/integrations/youtube/">
+    <span class="prev-next-label">Next</span>
+    YouTube
+  </a>
+  
+</nav>
+
+
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-mark" aria-hidden="true"></div>
+    <ul>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms &amp; EULA</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="https://github.com/roelvangils/pinza-updates/releases">Release notes</a></li>
+    </ul>
+    <p>© 2026 Eleven Ways. Pinza is made in Ghent, Belgium.</p>
+  </div>
+</footer>
+</body>
+</html>
