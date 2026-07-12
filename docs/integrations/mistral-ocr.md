@@ -23,7 +23,7 @@ OCR stands for optical character recognition: software that *reads* the text in 
 
 The key is stored in your macOS Keychain. (Command-line users can set the `MISTRAL_PINZA` environment variable instead; the Keychain entry wins if both exist.)
 
-{% shot "the Mistral section in Settings → Integrations with the secure API-key field filled (dots) and its explanatory footer text.", "dialog" %}
+{% shot "mistral-section-in-settings", "the Mistral section in Settings → Integrations with the secure API-key field filled (dots) and its explanatory footer text.", "dialog" %}
 
 ## Using it
 
@@ -31,7 +31,7 @@ The key is stored in your macOS Keychain. (Command-line users can set the `MISTR
 2. Hover the HUD, click **Copy as…**, and choose **Copy as Markdown using Mistral OCR**.
 3. Paste Markdown.
 
-{% shot "the Copy as… menu for a PDF pin with both PDF entries visible: “Copy as Text” and “Copy as Markdown using Mistral OCR”.", "menu" %}
+{% shot "copy-as-for-pdf-pins", "the Copy as… menu for a PDF pin with both PDF entries visible: “Copy as Text” and “Copy as Markdown using Mistral OCR”.", "menu" %}
 
 Until a key is configured, the menu item shows greyed out.
 

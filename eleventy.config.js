@@ -48,15 +48,26 @@ export default function (eleventyConfig) {
     keys.map((k) => `<kbd class="cap">${k}</kbd>`).join("")
   );
 
-  // {% shot "what the screenshot should show", "shape" %} → a gray
-  // placeholder box until the real screenshot replaces it. Shapes:
-  // hud (wide strip), menu (narrow), dialog (small), window (default).
-  eleventyConfig.addShortcode("shot", (description, shape = "window") =>
-    `<figure class="shot-ph ph-${shape}">` +
-    `<span class="shot-ph-tag" aria-hidden="true">Placeholder</span>` +
-    `<p>Screenshot: ${description}</p>` +
-    `</figure>`
-  );
+  // {% shot "file-name", "what the screenshot shows", "shape" %} →
+  // an image from /img/screenshots/help/. The PNGs are 2x retina;
+  // width/height attributes are the 1x display size. Dummy PNGs carry
+  // the description; replace each file with a real screenshot at the
+  // same pixel dimensions. Shapes: hud (wide strip), menu (narrow),
+  // dialog (small close-up), window (default).
+  const SHOT_DIMS = { window: [1440, 960], hud: [1440, 400], dialog: [960, 600], menu: [720, 880] };
+  eleventyConfig.addShortcode("shot", (name, description, shape = "window") => {
+    const [w, h] = SHOT_DIMS[shape];
+    const esc = description
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;");
+    return (
+      `<figure class="shot shot-${shape}">` +
+      `<img src="/img/screenshots/help/${name}.png" width="${w / 2}" height="${h / 2}" ` +
+      `loading="lazy" alt="${esc}" title="Screenshot: ${esc}">` +
+      `</figure>`
+    );
+  });
 
   // One ordered list of all help pages: drives the sidebar and prev/next.
   eleventyConfig.addCollection("help", (api) =>

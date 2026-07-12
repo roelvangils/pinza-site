@@ -19,7 +19,7 @@ Everything that makes Pinza Pinza: all app integrations, both shortcuts, every C
 
 Three things today: your **entire history** instead of the last 25 pins, the **Recently Deleted Bin** protected by Touch ID, and the **[MCP server](/help/integrations/mcp/)** for AI assistants. Features on [the roadmap](/help/whats-coming/) are included as they ship.
 
-{% shot "the Pinza Pro pane's shipped-feature grid — Unlimited recents, Recently Deleted Bin, MCP server — with the $9.99 one-time price footer.", "dialog" %}
+{% shot "pro-feature-grid", "the Pinza Pro pane's shipped-feature grid — Unlimited recents, Recently Deleted Bin, MCP server — with the $9.99 one-time price footer.", "dialog" %}
 
 ## How many Macs does one license cover?
 

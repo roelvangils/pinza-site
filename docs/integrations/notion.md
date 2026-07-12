@@ -20,7 +20,7 @@ Notion only lets an integration read pages you've explicitly shared with it. For
 1. Open the page in Notion and click **•••** in the top-right corner.
 2. Choose **Connections** and add **Pinza**.
 
-{% shot "Notion's ••• menu open on a page with Connections expanded and Pinza being added — the one step people miss.", "menu" %}
+{% shot "notion-connections-menu", "Notion's ••• menu open on a page with Connections expanded and Pinza being added — the one step people miss.", "menu" %}
 
 If you copy a page you haven't shared yet, Pinza tells you exactly that instead of failing silently.
 
@@ -34,4 +34,4 @@ Subpages inherit the connection from their parent. Share your workspace's few to
 2. Hover the HUD, open **Copy as…**, and choose **AI-Ready Markdown**.
 3. Paste.
 
-{% shot "split image: a Notion page on the left; on the right the same content pasted as clean Markdown in a text editor or AI chat." %}
+{% shot "notion-to-markdown-split", "split image: a Notion page on the left; on the right the same content pasted as clean Markdown in a text editor or AI chat.", "window" %}

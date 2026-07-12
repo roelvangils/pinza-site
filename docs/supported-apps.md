@@ -21,7 +21,7 @@ Three extras work in any of them:
 
 - **Highlight links** — select text on the page first, and the copied link ends in `#:~:text=…`, reopening scrolled to your selection with it highlighted.
 
-{% shot "a browser with a sentence selected and the HUD showing the copied link ending in #:~:text=…, demonstrating a highlight link.", "hud" %}
+{% shot "highlight-link-hud", "a browser with a sentence selected and the HUD showing the copied link ending in #:~:text=…, demonstrating a highlight link.", "hud" %}
 - **PDF tabs** — when the tab is showing a PDF, Pinza offers to download it and copy a file reference instead.
 - **[YouTube](/help/integrations/youtube/)** — clean `youtu.be` links, and timestamps if you enable the playhead.
 
@@ -35,7 +35,7 @@ Pinza copies the **working directory** of your foreground shell — and if you'r
 
 Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.
 
-{% shot "a terminal window SSH'd into a server, with the HUD showing the copied ssh://user@host link — the surprising one.", "hud" %}
+{% shot "terminal-ssh-hud", "a terminal window SSH'd into a server, with the HUD showing the copied ssh://user@host link — the surprising one.", "hud" %}
 
 ## Files and system
 
@@ -50,7 +50,7 @@ Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.
 Preview's page links are honored by browsers, but Preview itself ignores the page number when reopening a file — it returns to wherever you last were. Skim links round-trip perfectly; if you live in PDFs, Skim is the better companion.
 :::
 
-{% shot "a PDF open in Skim on page 37, with the HUD showing the copied skim:// link ending in #page=37.", "hud" %}
+{% shot "skim-page-link-hud", "a PDF open in Skim on page 37, with the HUD showing the copied skim:// link ending in #page=37.", "hud" %}
 
 ## Mail, notes, and tasks
 
@@ -71,7 +71,7 @@ Preview's page links are honored by browsers, but Preview itself ignores the pag
 Notes, Reminders, and Calendar offer no real automation interface, so these are driven through their menus — they work, but count them as best-effort. Obsidian links are parsed from the window title; a ` - ` inside a vault or note name can confuse them.
 :::
 
-{% shot "a Things 3 pin's hover tooltip: the to-do with its live status (Open) and the status-aware quick actions (Complete, Cancel) in the pin's menu.", "dialog" %}
+{% shot "things-tooltip-quick-actions", "a Things 3 pin's hover tooltip: the to-do with its live status (Open) and the status-aware quick actions (Complete, Cancel) in the pin's menu.", "dialog" %}
 
 ## Messaging
 

@@ -84,7 +84,7 @@ A few conventions:
 The file is made for dotfiles: version it in Git, symlink it from your dotfiles repo, or copy it to a new Mac — your custom [copy formats](/help/actions/) travel along in `actions.copyFormats`.
 :::
 
-{% shot "config.json open in a code editor (VS Code or BBEdit) next to Pinza's Settings window, the same value visible in both — showing the mirror at work." %}
+{% shot "config-json-mirror-split", "config.json open in a code editor (VS Code or BBEdit) next to Pinza's Settings window, the same value visible in both — showing the mirror at work.", "window" %}
 
 ## The pinza:// URL scheme
 
@@ -96,7 +96,7 @@ pinza://3F7KQ
 
 Get one from **Copy as… → Pinza Link** on the pin. Minting a permalink also pins the entry, so the link keeps working even as history moves on. (Web URLs don't offer this — they're already portable links.)
 
-{% shot "the Copy as… menu for a file pin with the Pinza Link entry highlighted, and the resulting pinza://3F7KQ link shown in the HUD confirmation.", "menu" %}
+{% shot "copy-as-pinza-link", "the Copy as… menu for a file pin with the Pinza Link entry highlighted, and the resulting pinza://3F7KQ link shown in the HUD confirmation.", "menu" %}
 
 Paste these into your notes, task manager, or scripts. Opening one:
 

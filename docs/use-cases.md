@@ -18,7 +18,7 @@ Send someone a link that scrolls straight to the passage you mean.
 2. Press your Copy shortcut.
 3. Paste. The link ends in `#:~:text=…` — when opened, the browser jumps to your selection and highlights it.
 
-{% shot "split image: left, a paragraph selected on a news article; right, the recipient's browser opened by the link with the same passage scrolled into view and highlighted in yellow." %}
+{% shot "highlight-link-before-after", "split image: left, a paragraph selected on a news article; right, the recipient's browser opened by the link with the same passage scrolled into view and highlighted in yellow.", "window" %}
 
 ::: help
 These are *text fragment* links — a web standard, not a Pinza trick. They open correctly in Safari, Chrome, Edge, and Firefox; a browser that doesn't support them simply opens the page at the top.
@@ -37,7 +37,7 @@ These are *text fragment* links — a web standard, not a Pinza trick. They open
 3. Move the pointer over the HUD, click **Copy as…**, and choose the Markdown option.
 4. Paste clean, AI-ready Markdown into Claude, ChatGPT, or wherever you need it. The same works for Notion pages with the [Notion integration](/help/integrations/notion/).
 
-{% shot "the Copy as… menu for a Google Doc pin, with the Drive-specific entries (AI-Ready Markdown, Office file, PDF) and the document's sharing state visible in the menu.", "menu" %}
+{% shot "copy-as-google-doc-menu", "the Copy as… menu for a Google Doc pin, with the Drive-specific entries (AI-Ready Markdown, Office file, PDF) and the document's sharing state visible in the menu.", "menu" %}
 
 ## Copy a file path for the Terminal
 
@@ -51,7 +51,7 @@ These are *text fragment* links — a web standard, not a Pinza trick. They open
 2. Hover the HUD and click **Remind me…**.
 3. Pick **This evening**. Pinza creates a reminder in Apple Reminders that links straight back to the page. The exact times behind "this evening" and "tomorrow morning" are yours to set in **Settings → Integrations**.
 
-{% shot "the expanded HUD with the Remind me… menu open, showing the preset options (This evening, Tomorrow morning, custom time picker).", "hud" %}
+{% shot "hud-remind-me-menu", "the expanded HUD with the Remind me… menu open, showing the preset options (This evening, Tomorrow morning, custom time picker).", "hud" %}
 
 ## Link to an email from your to-do list
 
@@ -77,7 +77,7 @@ These are *text fragment* links — a web standard, not a Pinza trick. They open
 2. Press {% kbd "⇧" %}{% kbd "⌘" %}{% kbd "D" %} to float it as a Card — a small always-on-top window.
 3. Drag it wherever you like. Cards stay above other apps while you work; close one like any window.
 
-{% shot "a floating Card with a web page preview sitting in the corner above a Pages document being written — showing how a reference stays visible while you work.", "dialog" %}
+{% shot "floating-card-over-document", "a floating Card with a web page preview sitting in the corner above a Pages document being written — showing how a reference stays visible while you work.", "dialog" %}
 
 ## Let your AI assistant search your pins (Pro)
 

@@ -9,7 +9,7 @@ order: 1
 
 Integrations live under **Settings → Integrations**. Each one is optional, and each adds something specific — a Bookmark button, cleaner Markdown, a timestamped YouTube link. All of them are free; only the MCP server requires Pinza Pro.
 
-{% shot "the full Settings → Integrations pane scrolled to the top: the Reminders anchors, Slack Workspaces, and the Google Drive / Notion / Raindrop sign-in sections with their status." %}
+{% shot "settings-integrations-pane", "the full Settings → Integrations pane scrolled to the top: the Reminders anchors, Slack Workspaces, and the Google Drive / Notion / Raindrop sign-in sections with their status.", "window" %}
 
 | Integration | What it adds | Setup |
 |---|---|---|
@@ -33,7 +33,7 @@ A few smaller integrations need no account and no keys — just preferences in t
 
 The HUD's **Remind me…** button writes to Apple Reminders. Here you define what "this evening" and "tomorrow morning" mean — two time pickers, nothing more.
 
-{% shot "close-up of the two Reminders time pickers — “This evening” and “Tomorrow morning” — with times set.", "dialog" %}
+{% shot "reminders-time-pickers", "close-up of the two Reminders time pickers — “This evening” and “Tomorrow morning” — with times set.", "dialog" %}
 
 ### Terminal
 

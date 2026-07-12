@@ -14,7 +14,7 @@ Open Settings from the menu bar icon's right-click menu, or with {% kbd "⌘" %}
 Looking for one specific option? Type its name into the sidebar's search field — every setting on this page is indexed, and Pinza jumps straight to it.
 :::
 
-{% shot "the Settings window as a whole: the sidebar with its search field and the nine panes grouped (Core, History, Account), General selected." %}
+{% shot "settings-window-overview", "the Settings window as a whole: the sidebar with its search field and the nine panes grouped (Core, History, Account), General selected.", "window" %}
 
 Nine panes. Defaults are marked.
 
@@ -39,13 +39,13 @@ Nine panes. Defaults are marked.
 - **Show onboarding again** — replays the first-run walkthrough.
 - **Reset Warnings** — re-enables every one-time warning dialog you've dismissed.
 
-{% shot "the full General pane: Appearance controls at the top, the Copy Confirmation group (position, duration, indicator, sound), and the Help section." %}
+{% shot "settings-general-pane", "the full General pane: Appearance controls at the top, the Copy Confirmation group (position, duration, indicator, sound), and the Help section.", "window" %}
 
 ## Actions
 
 The [Copy as… format list](/help/actions/): drag to reorder, uncheck to hide, and an editor for writing your own formats as text templates, shell scripts, or AppleScript.
 
-{% shot "the Actions pane: format list on the left, custom format editor on the right with a template in progress." %}
+{% shot "settings-actions-pane", "the Actions pane: format list on the left, custom format editor on the right with a template in progress.", "window" %}
 
 ## Integrations
 
@@ -64,7 +64,7 @@ Covered in depth in the [Integrations section](/help/integrations/):
 
 The two global shortcuts — **Copy Link** and **Open Recents**. Click a recorder and press the combination you want; click the small × to clear one. They work system-wide, even when Pinza isn't focused.
 
-{% shot "the Shortcuts pane: both recorders with combinations set, one mid-recording to show the active state.", "dialog" %}
+{% shot "settings-shortcuts-recording", "the Shortcuts pane: both recorders with combinations set, one mid-recording to show the active state.", "dialog" %}
 
 ## Accessibility
 
@@ -86,7 +86,7 @@ Your pin history and how it's presented:
 - **Poof and sound on delete** — on by default.
 - **Tooltip placement** — automatic (default) or pinned left of the menu.
 
-{% shot "the Recently Pinned pane: the Show-in-menu slider, the favicon and rich-preview toggles, and the CD/vinyl disc options — with the Pro lock badge on the history footer." %}
+{% shot "settings-recently-pinned-pane", "the Recently Pinned pane: the Show-in-menu slider, the favicon and rich-preview toggles, and the CD/vinyl disc options — with the Pro lock badge on the history footer.", "window" %}
 
 ::: help
 The free version keeps your latest **25 pins**; pins you've pinned to the top don't count against the cap. Pinza Pro removes the limit and keeps your entire history — see [What does Pro add?](/help/faq/#what-does-pro-add)
@@ -100,13 +100,13 @@ The Bin — a Pro feature. Deleted pins go here instead of vanishing:
 - **Keep deleted items for** — 7, **30** (default), or 90 days, or Forever.
 - **Require Touch ID to open the Bin** — on by default. Opening the Bin, or emptying it, asks for your fingerprint.
 
-{% shot "the Recently Deleted pane: retention picker, Touch ID toggle, the status line with item count, and the Open Bin… / Empty Bin… buttons.", "dialog" %}
+{% shot "settings-recently-deleted-pane", "the Recently Deleted pane: retention picker, Touch ID toggle, the status line with item count, and the Open Bin… / Empty Bin… buttons.", "dialog" %}
 
 ## Pinza Pro
 
 Your license: what's included, entering a key, and — once activated — your activation details and a **Deactivate This Mac** button (one license covers five Macs). Pro is a one-time purchase; see the [FAQ](/help/faq/) for pricing and refunds.
 
-{% shot "the Pinza Pro pane in its activated state: the Active chip, the shipped-feature grid, and the “coming later” roadmap list below." %}
+{% shot "settings-pro-pane-active", "the Pinza Pro pane in its activated state: the Active chip, the shipped-feature grid, and the “coming later” roadmap list below.", "window" %}
 
 ## About
 
@@ -115,7 +115,7 @@ Your license: what's included, entering a key, and — once activated — your a
 - **Permissions** — **Check Accessibility Permissions…** and **Reset All Automation Permissions…**, both useful in [Troubleshooting](/help/troubleshooting/).
 - **Diagnostics** — anonymous crash reports, **off** by default.
 
-{% shot "the About pane: version info, the Updates section with Check Now, the Permissions buttons, and the Diagnostics toggle.", "dialog" %}
+{% shot "settings-about-pane", "the About pane: version info, the Updates section with Check Now, the Permissions buttons, and the Diagnostics toggle.", "dialog" %}
 
 ## The config file
 

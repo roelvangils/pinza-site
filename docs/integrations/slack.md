@@ -16,7 +16,7 @@ Select a message in Slack and press your Copy shortcut: Pinza copies a link stra
 
 You get a `https://yourworkspace.slack.com/archives/…` link that anyone in the workspace can open.
 
-{% shot "Slack with a message selected (not the input field) and Pinza's HUD confirming the copied archives link.", "hud" %}
+{% shot "slack-message-copied-hud", "Slack with a message selected (not the input field) and Pinza's HUD confirming the copied archives link.", "hud" %}
 
 ::: help
 Slack gives Pinza very little to work with, so this is the most delicate of all app integrations. If your cursor is in a text field, Pinza backs off rather than guess — you may see a stray "L" typed instead, which {% kbd "⌘" %}{% kbd "Z" %} removes.
@@ -33,4 +33,4 @@ Pinza discovers Team IDs on its own where it can — from links in your history 
 3. Look at the address bar. The URL looks like `https://app.slack.com/client/TXXXXXXXX/…` — the part starting with `T` is the Team ID.
 4. Copy the whole URL to your clipboard and return to Pinza. It picks the ID out for you.
 
-{% shot "the Slack Workspaces help sheet in Settings: the numbered steps with the example app.slack.com URL and the “Open Slack in browser” button.", "dialog" %}
+{% shot "slack-team-id-help-sheet", "the Slack Workspaces help sheet in Settings: the numbered steps with the example app.slack.com URL and the “Open Slack in browser” button.", "dialog" %}

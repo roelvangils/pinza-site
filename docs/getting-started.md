@@ -20,11 +20,11 @@ This tutorial takes you from download to your first copied link. It takes about 
 2. Open the downloaded disk image and drag Pinza to your Applications folder.
 3. Open Pinza. It appears as a paperclip icon in your menu bar — there is no Dock icon and no main window. That's normal.
 
-{% shot "close-up of the right side of the menu bar with Pinza's paperclip icon circled or highlighted, so new users know what to look for.", "hud" %}
+{% shot "menubar-paperclip-icon", "close-up of the right side of the menu bar with Pinza's paperclip icon circled or highlighted, so new users know what to look for.", "hud" %}
 
 On first launch, Pinza shows a short onboarding that walks you through everything on this page: the apps it detected on your Mac, the keyboard shortcut, and the permissions. If you skipped it, you can bring it back anytime under **Settings → General → Show onboarding again**.
 
-{% shot "the onboarding welcome panel — the first step with the step indicator at the top, so users recognize the flow this tutorial mirrors." %}
+{% shot "onboarding-welcome", "the onboarding welcome panel — the first step with the step indicator at the top, so users recognize the flow this tutorial mirrors.", "window" %}
 
 ## Grant the two permissions
 
@@ -37,7 +37,7 @@ This is how Pinza knows which window you're looking at and reads its title or se
 1. During onboarding, click **Open System Settings**. (Or go to **System Settings → Privacy & Security → Accessibility** yourself.)
 2. Toggle **Pinza** on.
 
-{% shot "System Settings → Privacy & Security → Accessibility with Pinza in the app list and its toggle switched on — ideally with an arrow or highlight on the toggle." %}
+{% shot "accessibility-permission-granted", "System Settings → Privacy & Security → Accessibility with Pinza in the app list and its toggle switched on — ideally with an arrow or highlight on the toggle.", "window" %}
 
 ::: help
 Why does Pinza need this? Reading the frontmost window is how it knows what you're looking at. It reads only when you press the shortcut, nothing runs in the background, and nothing leaves your Mac. The [privacy policy](/privacy/) has the details.
@@ -47,7 +47,7 @@ Why does Pinza need this? Reading the frontmost window is how it knows what you'
 
 The first time Pinza asks a particular app for its URL or file path, macOS shows a one-time dialog: *"Pinza" wants access to control "Safari"*. Click **OK**. You'll see this once per app, not every time.
 
-{% shot "the macOS Automation consent dialog — “Pinza” wants access to control “Safari” — with the OK button visible, so users know this dialog is expected and safe.", "dialog" %}
+{% shot "automation-consent-dialog", "the macOS Automation consent dialog — “Pinza” wants access to control “Safari” — with the OK button visible, so users know this dialog is expected and safe.", "dialog" %}
 
 If you click **Don't Allow** by accident, fix it under **System Settings → Privacy & Security → Automation** — see [Troubleshooting](/help/troubleshooting/).
 
@@ -64,7 +64,7 @@ Pinza has exactly two global shortcuts. They work everywhere, no matter which ap
 
 Onboarding suggests a shortcut when you set Pinza up. To check or change what yours are, open **Settings → Shortcuts**. The rest of this documentation simply says "your Copy shortcut" and "your Recents shortcut".
 
-{% shot "Settings → Shortcuts: the two shortcut recorders (Copy Link and Open Recents) with their current key combinations visible." %}
+{% shot "settings-shortcuts-pane", "Settings → Shortcuts: the two shortcut recorders (Copy Link and Open Recents) with their current key combinations visible.", "window" %}
 
 ## Copy your first link
 
@@ -72,7 +72,7 @@ Onboarding suggests a shortcut when you set Pinza up. To check or change what yo
 2. Press your Copy shortcut.
 3. A small card appears near the bottom of your screen: the page title, its URL, and a confirmation that it's on your clipboard. This card is [the HUD](/help/hud/).
 
-{% shot "the HUD immediately after copying a Safari tab — collapsed card with the site's favicon, page title, and URL. Shot against a light desktop so the card pops.", "hud" %}
+{% shot "hud-first-copy-safari", "the HUD immediately after copying a Safari tab — collapsed card with the site's favicon, page title, and URL. Shot against a light desktop so the card pops.", "hud" %}
 
 4. Switch to Mail, Notes, or a chat and paste. The URL is there.
 
@@ -92,7 +92,7 @@ Each copy becomes a **pin**: an entry in Pinza's history with the title, the lin
 2. Your recent pins appear, newest first.
 3. Select one and press {% kbd "↩" %} to open it — the browser tab, the file, the mail message.
 
-{% shot "the recents popover open under the menu bar icon with a handful of varied pins (a web page, a file, a mail message) and one selected, its hover tooltip showing.", "menu" %}
+{% shot "recents-popover", "the recents popover open under the menu bar icon with a handful of varied pins (a web page, a file, a mail message) and one selected, its hover tooltip showing.", "menu" %}
 
 That's the loop: copy with one shortcut, return with the other.
 

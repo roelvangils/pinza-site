@@ -8,7 +8,7 @@ excludeFromNav: true
 
 Pinza lives in your Mac's menu bar. Press one keyboard shortcut and it copies the most useful reference from whatever you're looking at: the URL of your browser tab, the path of the file selected in Finder, a deep-link back to a mail message. Paste it anywhere.
 
-{% shot "the hero shot — a busy desktop with Safari frontmost and Pinza's HUD in the bottom-left corner confirming a copied link: icon, page title, URL. The one image that explains the whole app.", "hud" %}
+{% shot "hero-hud-over-desktop", "the hero shot — a busy desktop with Safari frontmost and Pinza's HUD in the bottom-left corner confirming a copied link: icon, page title, URL. The one image that explains the whole app.", "hud" %}
 
 These pages explain everything the app can do. If you're new, start with the tutorial.
 

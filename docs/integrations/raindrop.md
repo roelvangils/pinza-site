@@ -19,13 +19,13 @@ order: 5
 2. Hover the HUD and click **Bookmark** (or press {% kbd "⌘" %}{% kbd "D" %}).
 3. Pick a collection, add tags if you like, and save.
 
-{% shot "the expanded HUD with the Bookmark pill visible, and the Raindrop save popover open: collection picker, tag field, Save button.", "hud" %}
+{% shot "hud-raindrop-save-popover", "the expanded HUD with the Bookmark pill visible, and the Raindrop save popover open: collection picker, tag field, Save button.", "hud" %}
 
 Details worth knowing:
 
 - If the link is already in your Raindrop, the button reads **Bookmarked** with a checkmark — no duplicates.
 
-{% shot "close-up of the two button states side by side: “Bookmark” and “Bookmarked” with its green checkmark.", "dialog" %}
+{% shot "raindrop-bookmark-states", "close-up of the two button states side by side: “Bookmark” and “Bookmarked” with its green checkmark.", "dialog" %}
 - If you copied a [text highlight](/help/use-cases/#share-the-exact-sentence-not-just-the-page), the highlight travels into the bookmark.
 
 ## If you'd rather not see the button

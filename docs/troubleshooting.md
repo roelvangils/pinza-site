@@ -16,14 +16,14 @@ Work down this list:
 1. **Check the Accessibility permission.** Open **System Settings → Privacy & Security → Accessibility** and make sure Pinza is toggled on. Pinza can check for you: **Settings → About → Check Accessibility Permissions…**
 2. **Toggle it off and on.** After a Pinza update, macOS sometimes keeps the checkbox on while silently revoking the grant. Toggle Pinza off and back on in that same list.
 
-{% shot "System Settings → Privacy & Security → Accessibility with Pinza's toggle — annotated “turn it off, then on again” — the fix for most dead-shortcut reports." %}
+{% shot "accessibility-toggle-fix", "System Settings → Privacy & Security → Accessibility with Pinza's toggle — annotated “turn it off, then on again” — the fix for most dead-shortcut reports.", "window" %}
 
 ::: help
 Toggle stuck? When the switch is on but Pinza still can't read anything, remove Pinza from the Accessibility list entirely (select it and click the **−** button), then relaunch Pinza and grant the permission fresh. macOS occasionally holds on to a stale entry, and this clears it.
 :::
 3. **Check for a shortcut conflict.** Another app may claim the same combination. Open Pinza's **Settings → Shortcuts** — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.
 
-{% shot "Settings → Shortcuts with a recorder showing a conflict warning for a combination already taken by another app.", "dialog" %}
+{% shot "shortcut-conflict-warning", "Settings → Shortcuts with a recorder showing a conflict warning for a combination already taken by another app.", "dialog" %}
 
 ## "Pinza wants access to control …"
 
@@ -31,7 +31,7 @@ That dialog is macOS's **Automation** permission, and it's expected: the first t
 
 Clicked **Don't Allow** by accident? Go to **System Settings → Privacy & Security → Automation**, find Pinza, and toggle the app in question back on. If things are thoroughly tangled, **Settings → About → Reset All Automation Permissions…** starts the dialogs over from scratch.
 
-{% shot "System Settings → Privacy & Security → Automation expanded under Pinza, showing the per-app toggles (Safari, Finder, Mail…) with one being re-enabled." %}
+{% shot "automation-per-app-toggles", "System Settings → Privacy & Security → Automation expanded under Pinza, showing the per-app toggles (Safari, Finder, Mail…) with one being re-enabled.", "window" %}
 
 ## An app copies the wrong thing — or nothing
 

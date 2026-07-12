@@ -291,37 +291,17 @@
   color: var(--good);
 }
 
-/* ── Screenshot placeholders (gray boxes until shots exist) ── */
-.shot-ph {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
+/* ── Screenshots (dummy PNGs until the real ones exist) ────── */
+.shot {
   margin: 1.6rem 0;
-  padding: 1.4rem;
-  text-align: center;
-  background: color-mix(in srgb, var(--steel) 14%, var(--paper));
-  border: 1.5px dashed var(--steel);
-  border-radius: 12px;
-  color: var(--ink-soft);
 }
-.shot-ph p {
-  margin: 0;
-  max-width: 32rem;
-  font-size: 0.95rem;
+.shot img {
+  display: block;
 }
-.shot-ph-tag {
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--steel);
+.shot-dialog img,
+.shot-menu img {
+  margin-inline: auto;
 }
-.ph-window { min-height: 22rem; }
-.ph-hud    { min-height: 11rem; }
-.ph-dialog { min-height: 13rem; max-width: 30rem; margin-inline: auto; }
-.ph-menu   { min-height: 18rem; max-width: 22rem; margin-inline: auto; }
 
 /* ── Landing page cards ────────────────────────────────────── */
 .help-cards {

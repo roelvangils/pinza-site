@@ -23,11 +23,11 @@ Right after a copy, the HUD shows:
 - A status line — what was copied and, if you've copied it before, when.
 - Optionally a thin countdown line along the bottom edge that shows when the card will dismiss. Turn it on with **Settings → General → Dismiss Indicator → Sweep**.
 
-{% shot "the collapsed HUD, annotated close-up: favicon, title, URL, the status line, and the thin sweep countdown along the bottom edge, each labeled.", "hud" %}
+{% shot "hud-collapsed-annotated", "the collapsed HUD, annotated close-up: favicon, title, URL, the status line, and the thin sweep countdown along the bottom edge, each labeled.", "hud" %}
 
 If you copy several files at once, the card shows a stacked header ("3 items"). If you copy several things in quick succession, the newest card sits on top with the earlier ones peeking out below — flip through them with {% kbd "↑" %} and {% kbd "↓" %} or a scroll of the mouse wheel while hovering.
 
-{% shot "a stack of three HUD cards from rapid copies — the newest in front, the earlier ones peeking out below as ghost cards.", "hud" %}
+{% shot "hud-ghost-stack", "a stack of three HUD cards from rapid copies — the newest in front, the earlier ones peeking out below as ghost cards.", "hud" %}
 
 ## Expanding the card
 
@@ -36,7 +36,7 @@ Two ways:
 - **Hover it** with the pointer, or
 - **Press your Copy shortcut a second time.**
 
-{% shot "the expanded HUD for a copied web link: the action row with the Copy as…, Remind me…, and Bookmark pills on the left and the round icon buttons (Reveal in Launcher, Share, Remove) on the right. The × close button visible top-left.", "hud" %}
+{% shot "hud-expanded-action-row", "the expanded HUD for a copied web link: the action row with the Copy as…, Remind me…, and Bookmark pills on the left and the round icon buttons (Reveal in Launcher, Share, Remove) on the right. The × close button visible top-left.", "hud" %}
 
 The action row appears. What's in it depends on the pin:
 
@@ -52,7 +52,7 @@ The action row appears. What's in it depends on the pin:
 
 A round close button appears in the top-left corner when you hover — or just press {% kbd "esc" %}.
 
-{% shot "the Copy as… menu open under its pill, listing formats with their icons and the 1–9 number-key hints.", "menu" %}
+{% shot "hud-copy-as-menu", "the Copy as… menu open under its pill, listing formats with their icons and the 1–9 number-key hints.", "menu" %}
 
 ## Keyboard shortcuts in the HUD
 
@@ -96,7 +96,7 @@ The timer is forgiving:
 - {% kbd "space" %} **holds the card open** indefinitely.
 - After an action (a reminder set, a format copied), a brief confirmation takes over the card for two seconds, sometimes with an **Undo** button.
 
-{% shot "the HUD's confirmation overlay after setting a reminder — the card content blurred behind a centered checkmark and a sentence like “Reminder set for this evening”, with an Undo chip.", "hud" %}
+{% shot "hud-confirmation-undo", "the HUD's confirmation overlay after setting a reminder — the card content blurred behind a centered checkmark and a sentence like “Reminder set for this evening”, with an Undo chip.", "hud" %}
 
 ## Renaming a pin
 
@@ -108,7 +108,7 @@ All under **Settings → General**:
 
 - **Position** — six screen zones; bottom left is the default. You can also simply **drag the card** to another corner and it snaps there, updating the setting. The top-right zone is unavailable because macOS notifications live there.
 
-{% shot "the HUD mid-drag with the five snap zones outlined on the desktop and the top-right zone greyed out.", "hud" %}
+{% shot "hud-drag-snap-zones", "the HUD mid-drag with the five snap zones outlined on the desktop and the top-right zone greyed out.", "hud" %}
 - **Sound** — a soft pop by default; pick another system sound or none.
 - **Duration** and **Dismiss Indicator** — see above.
 
