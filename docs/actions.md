@@ -14,6 +14,8 @@ order: 3
 
 Copy something, hover the HUD, click **Copy as…** (or press {% kbd "⌘" %}{% kbd "C" %} while the HUD is up). Every entry in the menu is one format. The first nine can be fired with the number keys {% kbd "1" %}–{% kbd "9" %}.
 
+{% shot "the Copy as… menu open from the HUD for a copied file, showing the first formats with their icons — Absolute Path, Tilde Path, Markdown Link — and the number-key hints.", "menu" %}
+
 ### Built-in formats for files and folders
 
 | Format | Example output |
@@ -56,11 +58,15 @@ In **Settings → Actions**, the left column lists every format:
 - **Drag** to reorder. The order here is the order in the menu — put your favorites in the first nine slots so they get number keys.
 - **Uncheck** a format to hide it from the menu.
 
+{% shot "Settings → Actions: the format list column with checkboxes and a row mid-drag being reordered, the custom-format editor column visible on the right." %}
+
 ## Writing your own formats
 
 Click **Add** in Settings → Actions to create a custom format. Custom formats work on file and folder pins. A format is a small template; whatever it produces lands on your clipboard.
 
 Give it a **Name** (that's the menu label), write the **template**, and pick how it runs:
+
+{% shot "the custom format editor filled in: Name field (“Image dimensions”), the token chips row, a shell template using [full-path], the Run as picker set to Shell Script, and the Some inspiration link." %}
 
 ### 1. Text templates
 
@@ -161,6 +167,8 @@ In shell and AppleScript templates you don't need to quote tokens. Pinza hands t
 ## Previewing
 
 The editor's **Preview** runs your template against a sample file and shows exactly what would land on the clipboard. Copy a file in Finder and the preview adopts it as the sample.
+
+{% shot "close-up of the Preview area under the editor: the sample file's name and the exact output the template produced for it.", "dialog" %}
 
 ## Guardrails
 

@@ -18,6 +18,8 @@ Send someone a link that scrolls straight to the passage you mean.
 2. Press your Copy shortcut.
 3. Paste. The link ends in `#:~:text=…` — when opened, the browser jumps to your selection and highlights it.
 
+{% shot "split image: left, a paragraph selected on a news article; right, the recipient's browser opened by the link with the same passage scrolled into view and highlighted in yellow." %}
+
 ## Get back to page 37 of a PDF
 
 1. Open the PDF in Preview or [Skim](https://skim-app.sourceforge.io) and go to the page you care about.
@@ -31,6 +33,8 @@ Send someone a link that scrolls straight to the passage you mean.
 3. Move the pointer over the HUD, click **Copy as…**, and choose the Markdown option.
 4. Paste clean, AI-ready Markdown into Claude, ChatGPT, or wherever you need it. The same works for Notion pages with the [Notion integration](/help/integrations/notion/).
 
+{% shot "the Copy as… menu for a Google Doc pin, with the Drive-specific entries (AI-Ready Markdown, Office file, PDF) and the document's sharing state visible in the menu.", "menu" %}
+
 ## Copy a file path for the Terminal
 
 1. Select a file in Finder.
@@ -42,6 +46,8 @@ Send someone a link that scrolls straight to the passage you mean.
 1. Copy an article with your Copy shortcut.
 2. Hover the HUD and click **Remind me…**.
 3. Pick **This evening**. Pinza creates a reminder in Apple Reminders that links straight back to the page. The exact times behind "this evening" and "tomorrow morning" are yours to set in **Settings → Integrations**.
+
+{% shot "the expanded HUD with the Remind me… menu open, showing the preset options (This evening, Tomorrow morning, custom time picker).", "hud" %}
 
 ## Link to an email from your to-do list
 
@@ -66,6 +72,8 @@ Send someone a link that scrolls straight to the passage you mean.
 1. Press your Recents shortcut and select a pin you keep coming back to.
 2. Press {% kbd "⇧" %}{% kbd "⌘" %}{% kbd "D" %} to float it as a Card — a small always-on-top window.
 3. Drag it wherever you like. Cards stay above other apps while you work; close one like any window.
+
+{% shot "a floating Card with a web page preview sitting in the corner above a Pages document being written — showing how a reference stays visible while you work.", "dialog" %}
 
 ## Let your AI assistant search your pins (Pro)
 

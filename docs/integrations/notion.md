@@ -20,6 +20,8 @@ Notion only lets an integration read pages you've explicitly shared with it. For
 1. Open the page in Notion and click **•••** in the top-right corner.
 2. Choose **Connections** and add **Pinza**.
 
+{% shot "Notion's ••• menu open on a page with Connections expanded and Pinza being added — the one step people miss.", "menu" %}
+
 If you copy a page you haven't shared yet, Pinza tells you exactly that instead of failing silently.
 
 ## Using it
@@ -27,3 +29,5 @@ If you copy a page you haven't shared yet, Pinza tells you exactly that instead 
 1. With the page open — in the Notion app or in a browser — press your Copy shortcut.
 2. Hover the HUD, open **Copy as…**, and choose **AI-Ready Markdown**.
 3. Paste.
+
+{% shot "split image: a Notion page on the left; on the right the same content pasted as clean Markdown in a text editor or AI chat." %}

@@ -31,6 +31,8 @@ Everything runs over a local socket on your Mac. No pin data leaves the machine.
 
 Other MCP clients work the same way: point them at the bridge command from the snippet.
 
+{% shot "the MCP Server section in Settings → Integrations: the server toggle on, the five tool toggles below it (copy_pin off), and the Copy Claude Desktop config button." %}
+
 ## The five tools
 
 Each tool has its own toggle in Settings, so you decide exactly what an assistant may do:
@@ -44,3 +46,5 @@ Each tool has its own toggle in Settings, so you decide exactly what an assistan
 | `copy_pin` | Put a pin back on your clipboard | **Off** |
 
 `copy_pin` is the only tool that writes — it can overwrite whatever is on your clipboard — so it ships turned off. Enable it deliberately if you want it.
+
+{% shot "Claude Desktop answering a question like “find my pin about the Q3 budget” with a visible search_pins tool call and the pin it found — the payoff shot." %}

@@ -28,6 +28,8 @@ https://youtu.be/dQw4w9WgXcQ?t=213
 
 The link starts playing right there for whoever opens it. (Pinza adds the timestamp only when the video is paused, so a link you copy while watching doesn't jump around.) You also get a nicer title — `Video title — Channel name` — and the channel's avatar on the pin.
 
+{% shot "a paused YouTube video with Pinza's HUD showing the copied youtu.be link ending in ?t=213, the “Title — Channel” label, and the channel avatar on the pin.", "hud" %}
+
 ### Enabling it
 
 Reading the player requires your browser's permission to run JavaScript on request. That's a browser setting:
@@ -40,6 +42,8 @@ Reading the player requires your browser's permission to run JavaScript on reque
 **Chrome, Brave, Edge, and other Chromium browsers**
 
 1. From the menu bar, choose **View → Developer → Allow JavaScript from Apple Events**.
+
+{% shot "Safari's Develop menu open with “Allow JavaScript from Apple Events” checked — with a small inset of the same item in Chrome's View → Developer menu.", "menu" %}
 
 The first time Pinza can use the playhead in a browser, it asks before doing so — the switch per browser also lives in **Settings → Integrations → YouTube**.
 

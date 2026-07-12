@@ -671,15 +671,17 @@
 <p>Three extras work in any of them:</p>
 <ul>
 <li><strong>Highlight links</strong> — select text on the page first, and the copied link ends in <code>#:~:text=…</code>, reopening scrolled to your selection with it highlighted.</li>
-<li><strong>PDF tabs</strong> — when the tab is showing a PDF, Pinza offers to download it and copy a file reference instead.</li>
-<li><strong><a href="/help/integrations/youtube/">YouTube</a></strong> — clean <code>youtu.be</code> links, and timestamps if you enable the playhead.</li>
 </ul>
+<figure class="shot-ph ph-hud"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: a browser with a sentence selected and the HUD showing the copied link ending in #:~:text=…, demonstrating a highlight link.</p></figure>
+- **PDF tabs** — when the tab is showing a PDF, Pinza offers to download it and copy a file reference instead.
+- **[YouTube](/help/integrations/youtube/)** — clean `youtu.be` links, and timestamps if you enable the playhead.
 <blockquote>
 <p>Firefox exposes the least to automation, so its support is best-effort: the URL comes from reading the address bar, and highlight links can be less reliable than elsewhere.</p>
 </blockquote>
 <h2 id="terminals" tabindex="-1"><a class="heading-anchor" href="#terminals">Terminals</a></h2>
 <p>Pinza copies the <strong>working directory</strong> of your foreground shell — and if you're SSH'd into a remote machine, an <code>ssh://user@host</code> link instead:</p>
 <p>Terminal, iTerm2, Warp, kitty, Alacritty, Ghostty.</p>
+<figure class="shot-ph ph-hud"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: a terminal window SSH'd into a server, with the HUD showing the copied ssh://user@host link — the surprising one.</p></figure>
 <h2 id="files-and-system" tabindex="-1"><a class="heading-anchor" href="#files-and-system">Files and system</a></h2>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
 <table><thead>
@@ -710,6 +712,7 @@
 </div><blockquote>
 <p>Preview's page links are honored by browsers, but Preview itself ignores the page number when reopening a file — it returns to wherever you last were. Skim links round-trip perfectly; if you live in PDFs, Skim is the better companion.</p>
 </blockquote>
+<figure class="shot-ph ph-hud"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: a PDF open in Skim on page 37, with the HUD showing the copied skim:// link ending in #page=37.</p></figure>
 <h2 id="mail%2C-notes%2C-and-tasks" tabindex="-1"><a class="heading-anchor" href="#mail%2C-notes%2C-and-tasks">Mail, notes, and tasks</a></h2>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
 <table><thead>
@@ -764,6 +767,7 @@
 </div><blockquote>
 <p>Notes, Reminders, and Calendar offer no real automation interface, so these are driven through their menus — they work, but count them as best-effort. Obsidian links are parsed from the window title; a <code>-</code> inside a vault or note name can confuse them.</p>
 </blockquote>
+<figure class="shot-ph ph-dialog"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: a Things 3 pin's hover tooltip: the to-do with its live status (Open) and the status-aware quick actions (Complete, Cancel) in the pin's menu.</p></figure>
 <h2 id="messaging" tabindex="-1"><a class="heading-anchor" href="#messaging">Messaging</a></h2>
 <p><strong>Slack</strong> — a link to the selected message. Click the message first, and keep your cursor out of the input field. Details and setup for <code>slack://</code> deep links: <a href="/help/integrations/slack/">the Slack integration</a>.</p>
 <h2 id="media" tabindex="-1"><a class="heading-anchor" href="#media">Media</a></h2>

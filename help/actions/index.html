@@ -666,6 +666,7 @@
 <p><strong>Settings → Actions</strong> is where you shape the <strong>Copy as…</strong> menu — the list of alternate formats the <a href="/help/hud/">HUD</a> offers after a copy. You can reorder the built-in formats, hide the ones you never use, and write your own.</p>
 <h2 id="the-copy-as%E2%80%A6-menu" tabindex="-1"><a class="heading-anchor" href="#the-copy-as%E2%80%A6-menu">The Copy as… menu</a></h2>
 <p>Copy something, hover the HUD, click <strong>Copy as…</strong> (or press <kbd class="cap">⌘</kbd><kbd class="cap">C</kbd> while the HUD is up). Every entry in the menu is one format. The first nine can be fired with the number keys <kbd class="cap">1</kbd>–<kbd class="cap">9</kbd>.</p>
+<figure class="shot-ph ph-menu"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: the Copy as… menu open from the HUD for a copied file, showing the first formats with their icons — Absolute Path, Tilde Path, Markdown Link — and the number-key hints.</p></figure>
 <h3 id="built-in-formats-for-files-and-folders" tabindex="-1"><a class="heading-anchor" href="#built-in-formats-for-files-and-folders">Built-in formats for files and folders</a></h3>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrollable">
 <table><thead>
@@ -761,9 +762,11 @@
 <li><strong>Drag</strong> to reorder. The order here is the order in the menu — put your favorites in the first nine slots so they get number keys.</li>
 <li><strong>Uncheck</strong> a format to hide it from the menu.</li>
 </ul>
+<figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: Settings → Actions: the format list column with checkboxes and a row mid-drag being reordered, the custom-format editor column visible on the right.</p></figure>
 <h2 id="writing-your-own-formats" tabindex="-1"><a class="heading-anchor" href="#writing-your-own-formats">Writing your own formats</a></h2>
 <p>Click <strong>Add</strong> in Settings → Actions to create a custom format. Custom formats work on file and folder pins. A format is a small template; whatever it produces lands on your clipboard.</p>
 <p>Give it a <strong>Name</strong> (that's the menu label), write the <strong>template</strong>, and pick how it runs:</p>
+<figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: the custom format editor filled in: Name field (“Image dimensions”), the token chips row, a shell template using [full-path], the Run as picker set to Shell Script, and the Some inspiration link.</p></figure>
 <h3 id="1.-text-templates" tabindex="-1"><a class="heading-anchor" href="#1.-text-templates">1. Text templates</a></h3>
 <p>The template is copied as-is, with tokens replaced. Instant, and completely safe.</p>
 <p>Example — an HTML image tag for the copied file:</p>
@@ -839,6 +842,7 @@ display notification [filename] <span class="token keyword">with</span> title <s
 </div><p>In shell and AppleScript templates you don't need to quote tokens. Pinza hands the values to your script through environment variables (<code>PINZA_FULL_PATH</code> and friends), so file names with spaces, quotes, or other odd characters can't break — or abuse — your script.</p>
 <h2 id="previewing" tabindex="-1"><a class="heading-anchor" href="#previewing">Previewing</a></h2>
 <p>The editor's <strong>Preview</strong> runs your template against a sample file and shows exactly what would land on the clipboard. Copy a file in Finder and the preview adopts it as the sample.</p>
+<figure class="shot-ph ph-dialog"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: close-up of the Preview area under the editor: the sample file's name and the exact output the template produced for it.</p></figure>
 <h2 id="guardrails" tabindex="-1"><a class="heading-anchor" href="#guardrails">Guardrails</a></h2>
 <p>A few limits keep custom formats safe and snappy:</p>
 <ul>

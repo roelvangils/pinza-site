@@ -16,6 +16,8 @@ These features are planned but **not in the app yet**. They're listed here so th
 - **iCloud sync** — your pins on all your Macs.
 - **Spotlight integration** — find pins from the system-wide search.
 
+{% shot "the “Coming later — included in your licence” list in the Pinza Pro pane, with its Coming soon chips.", "dialog" %}
+
 No dates. Small teams that promise dates break them.
 
 If one of these matters to you, [say so](mailto:hello@pinza.app) — it genuinely affects what gets built first.

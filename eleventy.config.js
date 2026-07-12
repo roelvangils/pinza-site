@@ -22,6 +22,16 @@ export default function (eleventyConfig) {
     keys.map((k) => `<kbd class="cap">${k}</kbd>`).join("")
   );
 
+  // {% shot "what the screenshot should show", "shape" %} → a gray
+  // placeholder box until the real screenshot replaces it. Shapes:
+  // hud (wide strip), menu (narrow), dialog (small), window (default).
+  eleventyConfig.addShortcode("shot", (description, shape = "window") =>
+    `<figure class="shot-ph ph-${shape}">` +
+    `<span class="shot-ph-tag" aria-hidden="true">Placeholder</span>` +
+    `<p>Screenshot: ${description}</p>` +
+    `</figure>`
+  );
+
   // One ordered list of all help pages: drives the sidebar and prev/next.
   eleventyConfig.addCollection("help", (api) =>
     api.getFilteredByGlob("docs/**/*.md")

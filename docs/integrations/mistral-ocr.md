@@ -19,11 +19,15 @@ For PDFs that already contain text, Pinza extracts it on your Mac with no key an
 
 The key is stored in your macOS Keychain. (Command-line users can set the `MISTRAL_PINZA` environment variable instead; the Keychain entry wins if both exist.)
 
+{% shot "the Mistral section in Settings → Integrations with the secure API-key field filled (dots) and its explanatory footer text.", "dialog" %}
+
 ## Using it
 
 1. Copy a PDF — from Finder, Preview, Skim, or a browser tab showing a PDF.
 2. Hover the HUD, click **Copy as…**, and choose **Copy as Markdown using Mistral OCR**.
 3. Paste Markdown.
+
+{% shot "the Copy as… menu for a PDF pin with both PDF entries visible: “Copy as Text” and “Copy as Markdown using Mistral OCR”.", "menu" %}
 
 Until a key is configured, the menu item shows greyed out.
 

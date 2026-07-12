@@ -669,11 +669,14 @@
 <ol>
 <li><strong>Check the Accessibility permission.</strong> Open <strong>System Settings → Privacy &amp; Security → Accessibility</strong> and make sure Pinza is toggled on. Pinza can check for you: <strong>Settings → About → Check Accessibility Permissions…</strong></li>
 <li><strong>Toggle it off and on.</strong> After a Pinza update, macOS sometimes keeps the checkbox on while silently revoking the grant. Toggle Pinza off and back on in that same list.</li>
-<li><strong>Check for a shortcut conflict.</strong> Another app may claim the same combination. Open Pinza's <strong>Settings → Shortcuts</strong> — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.</li>
 </ol>
+<figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: System Settings → Privacy & Security → Accessibility with Pinza's toggle — annotated “turn it off, then on again” — the fix for most dead-shortcut reports.</p></figure>
+3. **Check for a shortcut conflict.** Another app may claim the same combination. Open Pinza's **Settings → Shortcuts** — if the recorder shows a warning, or pressing the shortcut does something else entirely, pick a different combination.
+<figure class="shot-ph ph-dialog"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: Settings → Shortcuts with a recorder showing a conflict warning for a combination already taken by another app.</p></figure>
 <h2 id="%22pinza-wants-access-to-control-%E2%80%A6%22" tabindex="-1"><a class="heading-anchor" href="#%22pinza-wants-access-to-control-%E2%80%A6%22">&quot;Pinza wants access to control …&quot;</a></h2>
 <p>That dialog is macOS's <strong>Automation</strong> permission, and it's expected: the first time Pinza asks an app for its URL or file path, macOS checks with you, once per app. Click <strong>OK</strong>.</p>
 <p>Clicked <strong>Don't Allow</strong> by accident? Go to <strong>System Settings → Privacy &amp; Security → Automation</strong>, find Pinza, and toggle the app in question back on. If things are thoroughly tangled, <strong>Settings → About → Reset All Automation Permissions…</strong> starts the dialogs over from scratch.</p>
+<figure class="shot-ph ph-window"><span class="shot-ph-tag" aria-hidden="true">Placeholder</span><p>Screenshot: System Settings → Privacy & Security → Automation expanded under Pinza, showing the per-app toggles (Safari, Finder, Mail…) with one being re-enabled.</p></figure>
 <h2 id="an-app-copies-the-wrong-thing-%E2%80%94-or-nothing" tabindex="-1"><a class="heading-anchor" href="#an-app-copies-the-wrong-thing-%E2%80%94-or-nothing">An app copies the wrong thing — or nothing</a></h2>
 <ul>
 <li>Check the app's entry in <a href="/help/supported-apps/">Supported apps</a>; several have small requirements (VS Code needs a window-title setting, Slack needs the message clicked, Apple Music only handles catalog tracks).</li>

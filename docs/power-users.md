@@ -80,6 +80,8 @@ A few conventions:
 - `actions.copyFormats` holds your [Copy as… configuration](/help/actions/) — order, visibility, and your custom formats — which makes custom formats portable between Macs.
 - Secrets are **not** in this file. The Mistral API key and all account sign-ins live in the macOS Keychain.
 
+{% shot "config.json open in a code editor (VS Code or BBEdit) next to Pinza's Settings window, the same value visible in both — showing the mirror at work." %}
+
 ## The pinza:// URL scheme
 
 Every file or deep-link pin can mint a short permalink:
@@ -89,6 +91,8 @@ pinza://3F7KQ
 ```
 
 Get one from **Copy as… → Pinza Link** on the pin. Minting a permalink also pins the entry, so the link keeps working even as history moves on. (Web URLs don't offer this — they're already portable links.)
+
+{% shot "the Copy as… menu for a file pin with the Pinza Link entry highlighted, and the resulting pinza://3F7KQ link shown in the HUD confirmation.", "menu" %}
 
 Paste these into your notes, task manager, or scripts. Opening one:
 
