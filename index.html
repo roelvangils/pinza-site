@@ -33,27 +33,35 @@
         <li><a href="#details">Details</a></li>
         <li><a href="#pro">Pro</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="/help/">Help</a></li>
         <li><a href="/support/">Support</a></li>
       </ul>
     </nav>
-    <a class="btn-header" href="/download/">Download</a>
+    <a class="btn-header" href="/download/"><i class="fa-brands fa-apple" aria-hidden="true"></i> Download</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="hero has-mark" aria-labelledby="hero-title">
+    <div class="giant-p" aria-hidden="true"></div>
     <div class="wrap wide">
       <h1 id="hero-title">Copy what you're looking&nbsp;at.</h1>
       <p class="tagline">One keyboard shortcut. Pinza puts the most useful reference for whatever app you're in straight on your clipboard: the URL of your Safari tab, the path of your selected Finder file, a deep-link to your Mail thread. Paste anywhere.</p>
 
-      <figure class="floating hero-shot collage-shot">
-        <img src="/img/screenshots/collage@2x.png" width="1500" height="1305"
-             alt="Pinza's recents popover under the menu bar: a search field labeled 'Search 16 pins', a list of recent pins — a group folder, Gmail threads, System Settings panes, a file, an App Store page, a Wikipedia article — with the pin 'Let It Happen - Soulwax Remix' selected, and a floating preview card showing the song's album art on a CD, 'Copied from Spotify, 35 mins ago', icons for seven music services, and the hint 'Press Enter to open or ⌘Enter to copy'.">
+      <figure class="floating hero-shot hud-demo" role="img"
+              aria-label="Animated demo of Pinza's copy HUD: a compact confirmation pill for 'Daring Fireball' expands into a card with Copy as, Remind me, and Bookmark buttons; menus then appear under each button in turn — link formats under Copy as, reminder times under Remind me, and a Save to Raindrop.io dialog under Bookmark.">
+        <div class="hud-demo-stage">
+          <img class="hud-frame hud-compact"  src="/img/screenshots/hud@2x.png"           width="1202" height="300" alt="" aria-hidden="true">
+          <img class="hud-frame hud-expanded" src="/img/screenshots/hud-expanded@2x.png"  width="1546" height="704" alt="" aria-hidden="true">
+          <img class="hud-frame hud-pop-copy"     src="/img/screenshots/hud-copy-as@2x.png"   width="404" height="208" alt="" aria-hidden="true">
+          <img class="hud-frame hud-pop-remind"   src="/img/screenshots/hud-remind-me@2x.png" width="446" height="326" alt="" aria-hidden="true">
+          <img class="hud-frame hud-pop-bookmark" src="/img/screenshots/hud-bookmark@2x.png"  width="904" height="632" alt="" aria-hidden="true">
+        </div>
       </figure>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="/download/">Download for macOS 14+ — free</a>
+        <a class="btn btn-primary" href="/download/"><i class="fa-brands fa-apple" aria-hidden="true"></i> Download for macOS 14+ — free</a>
         <a class="btn btn-secondary" href="#pro">Get Pro — $9.99, one time</a>
       </div>
       <p class="cta-note">Notarized DMG. Auto-updates. No account, no subscription.</p>
@@ -137,6 +145,20 @@
       <p class="section-lede">Some apps get special treatment — extra formats, live status, deeper links. The account integrations are optional, read-only, and off until you connect them.</p>
 
       <div class="powerups">
+        <div class="powerup pu-xl reveal">
+          <div class="pu-body">
+            <div class="pu-head"><span class="pu-glyph" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span><h3>Advanced PDF support</h3></div>
+            <p>A PDF pin knows it's a PDF — how many pages it has, which one you were reading, and what's written on them.</p>
+            <ul class="pu-points">
+              <li><strong>Links that keep your page.</strong> Copy from Preview or Skim and the link carries <code>#page=12</code> — it opens right at your page in any browser's PDF viewer, and Skim links round-trip perfectly.</li>
+              <li><strong>The text, not the file.</strong> Copy as Text puts the selectable text straight on your clipboard — the whole document or just the page you're on. On-device and instant, powered by PDFKit.</li>
+              <li><strong>Scanned pages? Mistral OCR.</strong> When there's no text layer, Copy as Markdown runs the PDF through Mistral's OCR and returns clean, LLM-ready Markdown — headings, tables and all. Bring your own API key; PDFs up to 50&nbsp;MB.</li>
+              <li><strong>PDFs in browser tabs, too.</strong> Reading one in Safari or Chrome? One action downloads it and copies the real file.</li>
+            </ul>
+            <p class="callout"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i> <span>OCR is the one Pinza feature that sends a file off your Mac — only that PDF, only to Mistral, only when you choose it. It stays greyed out until you add your key in Settings.</span></p>
+          </div>
+          <div class="pu-shot"><img src="/img/details/placeholder.svg" alt="" width="600" height="400" loading="lazy"></div>
+        </div>
         <div class="powerup reveal">
           <div class="pu-body">
             <div class="pu-head"><img src="/img/apps/google-drive.png" alt="" width="40" height="40"><h3>Google Drive</h3></div>
@@ -210,6 +232,67 @@
     </div>
   </section>
 
+  <section id="power-users" aria-labelledby="power-users-title">
+    <div class="wrap wide">
+      <span class="section-icon" aria-hidden="true"><i class="fa-solid fa-terminal"></i></span>
+      <h2 id="power-users-title">Built for power users</h2>
+      <p class="section-lede">Everything above works with zero configuration. Underneath, there's a layer for people who keep dotfiles.</p>
+
+      <div class="split">
+        <div class="config-mock" role="img" aria-label="An excerpt of Pinza's JSON config file at ~/.config/pinza/config.json, showing settings for launch at login, recents, keyboard shortcuts, and MCP tools.">
+          <p class="config-path" aria-hidden="true">~/.config/pinza/config.json</p>
+          <pre aria-hidden="true">{
+  "general":   { "launchAtLogin": true },
+  "recents":   { "displayCount": 25,
+                 "fetchFavicons": true },
+  "shortcuts": { "openRecents": "ctrl+opt+p" },
+  "mcp":       { "enabled": true,
+                 "tools": { "copy": false } }
+}</pre>
+        </div>
+
+        <div class="split-copy">
+          <h3>Settings that live in your dotfiles</h3>
+          <p>Every setting mirrors to a pretty-printed, sorted-keys JSON file — XDG-aware, diffable, script-editable. Change it and Pinza reads it back at launch. A file that doesn't parse is set aside, never applied blindly.</p>
+
+          <h3>Permalinks to your pins</h3>
+          <p>Every pin has a local address like <code>pinza://R3R63</code>. Opening it reveals the file or reopens the link; add <code>?action=copy</code> to put it back on your clipboard. Paste them in notes, scripts, or docs on your own Mac.</p>
+
+          <h3>A launcher, if you want one</h3>
+          <p>Prefer the Spotlight look? Swap the recents popover for a full launcher window — same search, same shortcuts, more room.</p>
+
+          <h3>Shortcuts as plain text</h3>
+          <p>Both global shortcuts are re-mappable, and they live in the config as strings like <code>"ctrl+opt+p"</code>. Set one to <code>null</code> to turn it off.</p>
+        </div>
+      </div>
+
+      <div class="formats-all">
+        <h3>Copy as… — the full list, all free</h3>
+        <ul class="format-strip">
+          <li>Git Path</li>
+          <li>Absolute Path</li>
+          <li>Tilde Path</li>
+          <li>Tilde Path (Escaped)</li>
+          <li>Filename</li>
+          <li>Enclosing Folder</li>
+          <li>AppleScript Path</li>
+          <li>File URL</li>
+          <li>VS Code URL</li>
+          <li>SCP Path</li>
+          <li>Markdown Link</li>
+          <li>HTML Link</li>
+          <li>ROT13</li>
+          <li>SHA-256 Hash</li>
+          <li>Base64</li>
+          <li>Base64 Data URI</li>
+          <li>Pinza Link</li>
+          <li>PDF Text</li>
+          <li>Markdown via OCR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="apps" aria-labelledby="apps-title">
     <div class="wrap wide">
       <h2 id="apps-title">One shortcut. Forty-plus apps.</h2>
@@ -249,7 +332,7 @@
           <ul class="bento">
             <li class="lg" data-app="Xcode"><img class="sq" src="/img/apps/xcode.png" alt="Xcode" width="84" height="84"></li>
             <li class="lg" data-app="VS Code"><img src="/img/apps/vscode.png" alt="VS Code" width="84" height="84"></li>
-            <li data-app="Cursor"><img class="sq" src="/img/apps/cursor.png" alt="Cursor" width="40" height="40"></li>
+            <li class="lg" data-app="Cursor"><img class="sq" src="/img/apps/cursor.png" alt="Cursor" width="84" height="84"></li>
             <li data-app="Windsurf"><picture>
               <source srcset="/img/ai/windsurf-dark.png" media="(prefers-color-scheme: dark)">
               <img src="/img/ai/windsurf-light.png" alt="Windsurf" width="40" height="40">
@@ -275,7 +358,7 @@
           <ul class="bento">
             <li class="lg" data-app="Notes"><img src="/img/apps/notes.png" alt="Notes" width="84" height="84"></li>
             <li class="lg" data-app="Notion"><img src="/img/apps/notion-app.png" alt="Notion" width="84" height="84"></li>
-            <li data-app="Obsidian"><img src="/img/apps/obsidian.png" alt="Obsidian" width="40" height="40"></li>
+            <li class="lg" data-app="Obsidian"><img src="/img/apps/obsidian.png" alt="Obsidian" width="84" height="84"></li>
             <li data-app="Bear"><img class="sq" src="/img/apps/bear.png" alt="Bear" width="40" height="40"></li>
             <li data-app="SnippetsLab"><img class="sq" src="/img/apps/snippetslab.png" alt="SnippetsLab" width="40" height="40"></li>
           </ul>
@@ -286,7 +369,7 @@
           <ul class="bento">
             <li class="lg" data-app="Spotify"><img src="/img/apps/spotify-app.png" alt="Spotify" width="84" height="84"></li>
             <li class="lg" data-app="Apple Music"><img src="/img/apps/apple-music-app.png" alt="Apple Music" width="84" height="84"></li>
-            <li data-app="Podcasts"><img src="/img/apps/podcasts.png" alt="Podcasts" width="40" height="40"></li>
+            <li class="lg" data-app="Podcasts"><img src="/img/apps/podcasts.png" alt="Podcasts" width="84" height="84"></li>
             <li data-app="Apple Books"><img src="/img/apps/books.png" alt="Apple Books" width="40" height="40"></li>
             <li data-app="Feishin"><img src="/img/apps/feishin.png" alt="Feishin" width="40" height="40"></li>
           </ul>
@@ -309,7 +392,7 @@
           <ul class="bento">
             <li class="lg" data-app="TextEdit"><img src="/img/apps/textedit.png" alt="TextEdit" width="84" height="84"></li>
             <li class="lg" data-app="Pages"><img class="sq" src="/img/apps/pages.png" alt="Pages" width="84" height="84"></li>
-            <li data-app="Any app with documents"><span class="mono-chip" role="img" aria-label="Any app with documents">…</span></li>
+            <li class="lg" data-app="Any app with documents"><span class="mono-chip" role="img" aria-label="Any app with documents">…</span></li>
           </ul>
         </div>
       </div>
@@ -458,7 +541,8 @@
     </div>
   </section>
 
-  <section id="pro" class="band" aria-labelledby="pro-title">
+  <section id="pro" class="band has-mark" aria-labelledby="pro-title">
+    <div class="giant-p" aria-hidden="true"></div>
     <div class="wrap wide">
       <h2 id="pro-title">Free for the core. Pro for the power.</h2>
       <p class="section-lede">The free tier is the real product — every app, both shortcuts, forever. Not a trial.</p>
@@ -476,7 +560,7 @@
             <li>Last 25 items in Recents</li>
             <li>All 1.x updates</li>
           </ul>
-          <a class="btn btn-secondary" href="/download/">Download free</a>
+          <a class="btn btn-secondary" href="/download/"><i class="fa-brands fa-apple" aria-hidden="true"></i> Download free</a>
         </div>
         <div class="plan plan-pro">
           <h3>Pinza Pro</h3>
